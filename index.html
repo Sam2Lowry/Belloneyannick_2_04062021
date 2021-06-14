@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/30c3931934.js" crossorigin="anonymous"></script>
+
+        <title>Reservia : locations de vacances</title>
+    </head>
+
+    <body>
+        <script src="app.js"></script>
+        <div id="bloc_page">
+            <header>
+                <nav class="navbar">
+                    <a href="#" class="logo">
+                        <img src="img/logo/Reservia.svg" alt="reversia logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li class="nav-items"><a href="#">Hébergement</a></li>
+                        <li class="nav-items"><a href="#">Activités</a></li>
+                    </ul>
+                    <span id="register">S'inscrire</span>
+                </nav>
+
+                <div id="area">
+                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                    En plein centre ville ou en pleine nature
+                    <div id="area_bar">
+                        <form method="POST" action="#">
+                            <i class="fa fa-map-marker" style=color:#0065FC></i>
+                            <input type="text" placeholder="Où allez vous ?"> <input type="submit" value="Rechercher">
+                        </form>
+                    </div>
+
+
+                    <div class="filters">
+                        <h2>Filtres</h2>
+                        <form action="#">
+                            <div class="select-filters">
+                                <i class='fas fa-money-bill-wave' style="color:#0065FC"></i>
+                                <select name="price" id="price">
+                                    <option value="eco">Economique</option>
+                                </select>
+                            </div>
+                            <div class="select-filters">
+                                <i class='fas fa-child' style="color:#0065FC"></i>
+                                <select name="persons" id="persons">
+                                    <option value="persons">Familial</option>
+                                </select>
+                            </div>
+                            <div class="select-filters">
+                                <i class='fas fa-heart' style="color:#0065FC"></i>
+                                <select name="mood" id="mood">
+                                    <option value="mood">Romantique</option>
+                                </select>
+                            </div>
+                            <div class="select-filters">
+                                <i class='fas fa-dog' style="color:#0065FC"></i>
+                                <select name="pet" id="pet">
+                                    <option value="pet">Animaux autorisés</option>
+                                </select>
+                            </div>
+                        </form>
+                        <i class="fa fa-info-circle" aria-hidden="true" style=color:#0065FC></i>
+                    </div>
+            </header>
+            <section>
+                <Article id="location">
+                    <span>
+                        <h2>Hébergements à Marseille</h2>
+                    </span>
+                    <div id="panel-location">
+                    </div>
+                </Article>
+                <Article id="popular">
+                    <span>
+                        <h2>Les plus populaires</h2>
+                    </span>
+                    <div id="panel-popular">
+                    </div>
+                </Article>
+                <Article id="activities">
+                    <span>
+                        <h2>Activités à Marseille</h2>
+                    </span>
+                    <div id="panel-activities">
+                    </div>
+                </Article>
+            </section>
+            <footer>
+                <div class="footer-list">
+                    <ul id="About">
+                        <h2>A propos</h2>
+                    </ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialités</a></li>
+                </div>
+                <div class="footer-list">
+                    <ul id="housing">
+                        <h2>Nos hébergement</h2>
+                    </ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </div>
+                <div class="footer-list">
+                    <ul id="help">
+                        <h2>Assistance</h2>
+                    </ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </div>
+
+            </footer>
+        </div>
+    </body>
+
+</html>
