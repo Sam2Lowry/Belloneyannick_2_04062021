@@ -14,14 +14,41 @@
     font-style: normal;
 }
 
+#bloc_page {
+    font-family: 'ralewaythin';
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+}
+
 .filters select {
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
-.filters_icons select
-{
-    color: aqua;
+
+section {
+    display: flex;
 }
 
-body {
-    background-color: #f2f2f2
+section article {
+    background-color: #F2F2F2;
+}
+h1
+{
+    margin-bottom: 16px;
 }
