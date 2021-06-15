@@ -14,34 +14,37 @@
     </head>
 
     <body>
-        <script src="app.js"></script>
+        <!-- <script src="app.js"></script> -->
         <div id="bloc_page">
             <header>
                 <nav class="navbar">
                     <a href="#" class="logo">
-                        <img src="img/logo/Reservia.svg" alt="reversia logo">
+                        <img src="img/logo/Reservia.svg" alt="reservia logo">
                     </a>
-                    <ul class="nav-links">
-                        <li class="nav-items"><a href="#">Hébergement</a></li>
-                        <li class="nav-items"><a href="#">Activités</a></li>
-                        <li> <span id="register"><a href="#">S'inscrire</a></span> </li>
-                    </ul>
-
+                    <div id="nav-links">
+                        <a href="#">Hébergement</a>
+                        <a href="#">Activités</a>
+                        <a href="#">S'inscrire</a>
+                    </div>
                 </nav>
 
                 <div id="area">
                     <h1>Trouvez votre hébergement pour des vacances de rêves <br>
-                        En plein centre ville ou en pleine nature</h1>
+                        <span>En plein centre ville ou en pleine nature</span>
+                    </h1>
                     <div id="area_bar">
+                        <span id="marqueur"><i class="fa fa-map-marker" style=color:#000000></i></span>
                         <form method="POST" action="#">
-                            <i class="fa fa-map-marker" style=color:#0065FC></i>
-                            <input type="text" placeholder="Où allez vous ?"> <input type="submit" value="Rechercher">
+
+                            <input type="text" placeholder="Où allez vous ?" value="Marseille, France"> <input
+                                type="submit" value="Rechercher">
                         </form>
                     </div>
 
                     <div class="filters">
-                        <h2>Filtres</h2>
+                        <!-- <span>Filtres</span> -->
                         <form action="#">
+                            <span>Filtres</span>
                             <div class="select-filters">
                                 <i class='fas fa-money-bill-wave' style="color:#0065FC"></i>
                                 <select name="price" id="price">
@@ -67,77 +70,73 @@
                                 </select>
                             </div>
                         </form>
-                        <i class="fa fa-info-circle" aria-hidden="true" style=color:#0065FC></i>
+                       <p> <i class="fa fa-info-circle" aria-hidden="true" style=color:#0065FC></i> Plus de 500 logements
+                        sont disponibles dans cette ville</p>
                     </div>
             </header>
             <section>
-                <Article id="location">
-                    <span>
-                        <h2>Hébergements à Marseille</h2>
-                    </span>
-                    <div id="ann_01">
-                        <picture>
-                            <source media="(max-width: 991px)" srcset="img/hebergements/4_small/aub_cann.jpg"
-                                alt="Auberge de la cannebière">
-                            <source media="(max-width: 1600px)" srcset="img/hebergements/3_medium/aub_cann.jpg"
-                                alt="Auberge de la cannebière">
-                            <!-- <source media="(min-width: 1600px)" srcset="img/hebergements/2_large/aub_cann.jpg"
+
+                <Article>
+
+                    <div id="location">
+                      <span id="entitle"><h2>Hébergements à Marseille</h2></span>
+
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(max-width: 991px)" srcset="img/hebergements/4_small/aub_cann.jpg"
+                                    alt="Auberge de la cannebière">
+                                <source media="(max-width: 1600px)" srcset="img/hebergements/3_medium/aub_cann.jpg"
+                                    alt="Auberge de la cannebière">
+                                <!-- <source media="(min-width: 1600px)" srcset="img/hebergements/2_large/aub_cann.jpg"
                                 alt="Auberge de la cannebière"> 
                                 <source media="(min-width: 3000px)" srcset="img/hebergements/1_xlarge/aub_cann.jpg"
                                 alt="Auberge de la cannebière"> -->
-                            <img src="img/hebergements/3_medium/aub_cann.jpg" alt="Auberge de la cannebière">
-                        </picture>
-                        <h3>Auberge de la cannebière</h3>
-                        Nuit à partir de 25€
-                        <div class="rating">
-                            <i class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
-                                style="color:#0065FC"></i><i class='fas fa-star' style="color:#0065FC"></i><i
-                                class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
-                                style="color:#cccccc"></i>
-                        </div>
+                                <img src="img/hebergements/3_medium/aub_cann.jpg" alt="Auberge de la cannebière">
+                            </picture>
+                            <span class="fig">
+                                <h3>Auberge de la cannebière</h3>
+                                Nuit à partir de 25€
+                            </span>
+                            <div class="rating">
+                                <i class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
+                                    style="color:#0065FC"></i><i class='fas fa-star' style="color:#0065FC"></i><i
+                                    class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
+                                    style="color:#cccccc"></i>
+                            </div>
 
-                    </div>
+                        </a>
 
-                    <div id="ann_02">
-                        <picture>
-                            <source media="(max-width: 991px)" srcset="img/hebergements/4_small/hot_port.jpg"
-                                alt="Hôtel du port">
-                            <source media="(max-width: 1600px)" srcset="img/hebergements/3_medium/hot_port.jpg"
-                                alt="Hôtel du port">
-                            <!-- <source media="(min-width: 1600px)" srcset="img/hebergements/2_large/aub_cann.jpg"
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(max-width: 991px)" srcset="img/hebergements/4_small/hot_port.jpg"
+                                    alt="Hôtel du port">
+                                <source media="(max-width: 1600px)" srcset="img/hebergements/3_medium/hot_port.jpg"
+                                    alt="Hôtel du port">
+                                <!-- <source media="(min-width: 1600px)" srcset="img/hebergements/2_large/aub_cann.jpg"
                                 alt="Auberge de la cannebière"> 
                                 <source media="(min-width: 3000px)" srcset="img/hebergements/1_xlarge/aub_cann.jpg"
                                 alt="Auberge de la cannebière"> -->
-                            <img src="img/hebergements/3_medium/hot_port.jpg" alt="Hôtel du port">
-                        </picture>
-                        <h3>Hôtel du port</h3>
-                        Nuit à partir de 52€
-                        <div class="rating">
-                            <i class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
-                                style="color:#0065FC"></i><i class='fas fa-star' style="color:#0065FC"></i><i
-                                class='fas fa-star' style="color:#0065FC"></i><i
-                                class='fas fa-star' style="color:#0065FC"></i>
-                        </div>
-
-                    </div>
-
-
-                    <div id="panel-location">
-                    </div>
+                                <img src="img/hebergements/3_medium/hot_port.jpg" alt="Hôtel du port">
+                            </picture>
+                            <span class="fig">
+                                <h3>Hôtel du port</h3>
+                                Nuit à partir de 52€
+                            </span>
+                            <div class="rating">
+                                <i class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
+                                    style="color:#0065FC"></i><i class='fas fa-star' style="color:#0065FC"></i><i
+                                    class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
+                                    style="color:#0065FC"></i>
+                            </div>
+                        </a>
                 </Article>
-                <Article id="popular">
-                    <span>
-                        <h2>Les plus populaires</h2>
-                    </span>
-                    <div id="panel-popular">
-                    </div>
+
+                <Article>
+                    <h2>Les plus populaires <i class='fas fa-chart-line'></i></h2>
                 </Article>
-                <Article id="activities">
-                    <span>
-                        <h2>Activités à Marseille</h2>
-                    </span>
-                    <div id="panel-activities">
-                    </div>
+
+                <Article>
+                    <h2>Activités à Marseille</h2>
                 </Article>
             </section>
             <footer>
@@ -145,23 +144,23 @@
                     <ul id="About">
                         <h2>A propos</h2>
                     </ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialités</a></li>
+                    <li><a href="#">Fonctionnement du site</a>
+                    <li><a href="#">Conditions générales de vente</a>
+                    <li><a href="#">Données et confidentialités</a>
                 </div>
                 <div class="footer-list">
                     <ul id="housing">
                         <h2>Nos hébergement</h2>
                     </ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
+                    <li><a href="#">Charte qualité</a>
+                    <li><a href="#">Soumettre votre hôtel</a>
                 </div>
                 <div class="footer-list">
                     <ul id="help">
                         <h2>Assistance</h2>
                     </ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Centre d'aide</a>
+                    <li><a href="#">Nous contacter</a>
                 </div>
 
             </footer>

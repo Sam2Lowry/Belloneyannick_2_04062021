@@ -1,54 +1,216 @@
 /* Charte couleur : bleu #0065FC Bleu clair : #DEEBFF Gris background : #F2F2F2 */
 
 @font-face {
-    font-family: 'ralewaythin_italic';
-    src: url('fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'), url('fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'raleway_italic';
+    src: url('fonts/raleway-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'), url('fonts/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'raleway';
+    src: url('fonts/Raleway.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 #bloc_page {
-    font-family: 'ralewaythin';
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.navbar ul li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-#register {
-    display: flex;
-    align-items: center;
+    font-family: 'raleway';
+    margin: 20px 20px 20px;
 }
 
 .filters select {
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
 
+nav {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-links {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 40%;
+}
+
+#nav-links a {
+    flex: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    Color: black;
+}
+
+#nav-links a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#nav-links a:last-child {
+    color: #0065FC;
+}
+
+/* ////////////////////// */
+
+#area h1 {
+    font-size: larger;
+}
+
+#area h1 span {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#area_bar {
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+#marqueur {
+    display: flex;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#area_bar input, input.button {
+    height: 30px;
+    color: #030303;
+    text-decoration: none;
+    border: none;
+}
+
+#area_bar input[type=submit] {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    
+}
+
+.filters span {
+    font-weight: 700;
+    
+}
+
+.select-filters {
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.filters span:nth-last-child
+{
+    background-color: red;
+}
+/* ////////////////////// */
+
 section {
     display: flex;
 }
 
-section article {
+Article #location {
     background-color: #F2F2F2;
 }
-h1
-{
+
+h1 {
     margin-bottom: 16px;
+}
+
+#entitle {
+    width: 100%;
+}
+
+#location {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vh;
+    justify-content: space-between;
+}
+
+#location h3 {
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+#location picture img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#location a {
+    text-decoration: none;
+}
+
+.card {
+    border: 3px solid rgb(255, 255, 255);
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
+    background-color: white;
+    width: 250px;
+    font-size: x-small;
+    color: #030303;
+    height: 225px;
+}
+
+.card .fig {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.rating {
+    margin-left: 3px;
+}
+
+/* ////////////////////// */
+
+/* Footer */
+
+/* ////////////////////// */
+
+@media screen and (max-width: 700px) {
+    .logo {
+        float: left;
+    }
+    #nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+    #nav-links a {
+        margin-left: 5px;
+    }
+    #nav-links a:last-child {
+        position: absolute;
+        padding-left: 115px;
+    }
+    #nav-links a:hover {
+        text-decoration: underline 3px solid #0065FC;
+        border-top: none;
+    }
+}
+
+/* @media screen and (max-width: 360px) {
+    .logo {display: none}
+} */
+
+figure img {
+    width: 40px;
 }
