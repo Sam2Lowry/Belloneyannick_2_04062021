@@ -93,7 +93,12 @@ nav {
     color: white;
     border-radius: 0px 10px 10px 0px;
 }
-
+.filters span {
+    font-weight: 700;
+}
+.select-filters{
+    display: inline-block;
+}
 
 /* ////////////////////// */
 
@@ -168,7 +173,7 @@ h1 {
         
     }
     #nav-links a:hover {
-        border-bottom: 3px solid #0065FC;
+        text-decoration: underline 3px solid  #0065FC;
         border-top: none;
     }
 
