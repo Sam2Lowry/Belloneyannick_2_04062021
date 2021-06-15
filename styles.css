@@ -1,21 +1,21 @@
 /* Charte couleur : bleu #0065FC Bleu clair : #DEEBFF Gris background : #F2F2F2 */
 
 @font-face {
-    font-family: 'ralewaythin_italic';
-    src: url('fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'), url('fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'raleway_italic';
+    src: url('fonts/raleway-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'), url('fonts/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'raleway';
+    src: url('fonts/Raleway.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 #bloc_page {
-    /* font-family: 'ralewaythin'; */
+    font-family: 'raleway';
     margin: 20px 20px 20px;
 }
 
@@ -43,9 +43,13 @@ nav {
     align-items: center;
     font-size:1.2em;
     Color: black;
-    transition: all 0.2s;
+    
 }
-
+#nav-links a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
 section {
     display: flex;
 }
