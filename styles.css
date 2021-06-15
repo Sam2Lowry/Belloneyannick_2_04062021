@@ -32,24 +32,69 @@ nav {
 
 #nav-links {
     display: flex;
-    width: 30%;
+    flex-wrap: wrap-reverse;
+    width: 40%;
 }
 
 #nav-links a {
     flex: 1;
     text-decoration: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    font-size:1.2em;
+    font-size: 1.1em;
     Color: black;
-    
 }
+
 #nav-links a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
     font-weight: bold;
 }
+
+#nav-links a:last-child {
+    color: #0065FC;
+}
+
+/* ////////////////////// */
+
+#area h1 {
+    font-size: larger;
+}
+
+#area h1 span {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#area_bar {
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    width: max-content;
+}
+#marqueur {
+    display: flex;
+    width: 20px;
+    justify-content:center;
+    align-items: center;
+}
+
+#area_bar input, input.button {
+    height: 30px;
+    color: #030303;
+    text-decoration: none;
+    border: none;
+}
+
+#area_bar input[type=submit] {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* ////////////////////// */
+
 section {
     display: flex;
 }
@@ -81,10 +126,12 @@ h1 {
 }
 
 .card {
-    border: 2px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     margin: 5px;
-    border-radius: 3px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
     background-color: white;
     width: 250px;
     font-size: x-small;
     height: 225px;
+}
