@@ -33,7 +33,7 @@ nav {
 #nav-links {
     display: flex;
     flex-wrap: wrap-reverse;
-    width: 40%;
+    width: 50%;
 }
 
 #nav-links a {
@@ -42,8 +42,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
     Color: black;
+    border-top: 3px solid #ffffff00 ;
 }
 
 #nav-links a:hover {
@@ -80,6 +81,7 @@ nav {
     width: 20px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #area_bar input, input.button {
@@ -93,6 +95,7 @@ nav {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+    cursor:pointer;
 }
 
 .filters {
@@ -200,6 +203,7 @@ h1 {
     #nav-links a:last-child {
         position: absolute;
         padding-left: 115px;
+        border-bottom: 3px solid #ffffff00;
     }
     #nav-links a:hover {
         text-decoration: underline 3px solid #0065FC;
