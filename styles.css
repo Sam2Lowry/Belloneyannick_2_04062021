@@ -94,6 +94,7 @@ nav {
     border-radius: 0px 10px 10px 0px;
 }
 
+
 /* ////////////////////// */
 
 section {
@@ -176,3 +177,7 @@ h1 {
 /* @media screen and (max-width: 360px) {
     .logo {display: none}
 } */
+
+figure img{
+    width: 40px;
+}
