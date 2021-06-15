@@ -110,12 +110,14 @@ section {
 
 Article #location {
     background-color: #F2F2F2;
-} 
+}
 
 h1 {
     margin-bottom: 16px;
 }
-
+#entitle {
+    width : 100%;
+}
 #location {
     display: flex;
     flex-direction: row;
