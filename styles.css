@@ -74,7 +74,7 @@ nav {
     border-radius: 15px;
     width: max-content;
     margin-bottom: 20px;
-    box-shadow: inset 10px 10px 10px 10px #F2F2F2;
+    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
 #marqueur {
@@ -101,7 +101,6 @@ nav {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
-    padding: 0;
 }
 
 .filters {
