@@ -263,6 +263,7 @@ h1 {
 
 .card_2 {
     display: flex;
+    flex-direction: row;
     width: 80%;
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
@@ -276,20 +277,23 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size:x-small;
+    font-size:small;
     margin-left: 3px;
 }
 .card_2 .fig h3{
     text-align: center;
 }
-
+#popular a
+{
+    text-decoration : none;
+}
 .rating {
     display: inline-block;
 }
 
 #popular picture {
     width: 50%;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 5px;
 }
 
@@ -305,11 +309,18 @@ ul {
 
 footer {
     display: flex;
+    background-color: #F2F2F2;
     flex-direction: row;
+    justify-content: space-evenly;
+}
 
+footer > div {
+    width: 60%;
 }
     /* ////////////////////// */
+
     @media screen and (max-width: 400px) {
+    
         #location {
             flex-direction: column;
         }
