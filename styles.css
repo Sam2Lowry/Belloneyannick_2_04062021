@@ -203,32 +203,32 @@ h1 {
 
 .read_more {
     width: 200px;
+    font-weight: bold;
+    margin : 15px 0px 15px 10px;
 }
 
-.read_more {
-    font-weight: bold;
-}
 
 #popular {
     display: flex;
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
 }
-#title_pop{
+
+#title_pop {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     align-items: baseline;
 }
-#title_pop .fa{
+
+#title_pop .fa {
     font-size: larger;
     margin-right: 10px;
 }
-#title_pop h2
-{
+
+#title_pop h2 {
     margin-left: 10px;
 }
-
 
 /* ////////////////////// */
 
