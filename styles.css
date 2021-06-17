@@ -209,9 +209,8 @@ h1 {
 .read_more {
     width: 200px;
     font-weight: bold;
-    margin : 15px 0px 15px 10px;
+    margin: 15px 0px 15px 10px;
 }
-
 
 #popular {
     display: flex;
@@ -237,11 +236,13 @@ h1 {
 
 /* ////////////////////// */
 
-/* Footer */
+.footer-list a {
+    text-decoration: none;
+}
 
 /* ////////////////////// */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
     .logo {
         float: left;
     }
@@ -263,7 +264,27 @@ h1 {
         text-decoration: underline 3px solid #0065FC;
         border-top: none;
     }
-}
+    section {
+        flex-direction: column;
+    
+    }
+    #location{
+        flex-direction: column;
+    }
+    .card{
+        width :auto;
+    }
+    Article:first-child {
+        width: auto;
+    }
+    
+    Article:nth-of-type(2) {
+        width: auto;
+    }
+    
+    Article:last-child {
+        width: auto;
+    }
 
 /* @media screen and (max-width: 360px) {
     .logo {display: none}
