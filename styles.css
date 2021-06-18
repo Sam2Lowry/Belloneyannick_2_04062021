@@ -18,11 +18,13 @@
     font-family: 'raleway';
     margin: 20px 20px 20px;
 }
-.fig{
+
+.fig {
     font-weight: bold;
-    font-size: medium; 
+    font-size: medium;
 }
-.fig span{
+
+.fig span {
     font-weight: normal;
 }
 
@@ -177,6 +179,9 @@ h1>span {
     font-size: smaller;
 }
 
+/* Section Hébergement à Marseille */
+/* Section Hébergement à Marseille */
+
 #entitle {
     width: 100%;
 }
@@ -197,6 +202,7 @@ h1>span {
 #location picture img {
     width: 100%;
     height: 70%;
+    object-fit: cover;
     margin: auto;
     border-radius: 5px;
 }
@@ -234,19 +240,8 @@ h1>span {
     margin: 15px 0px 15px 10px;
 }
 
-#popular {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F2F2F2;
-}
-
-#popular picture img {
-    width: 100%;
-    border-radius: 5px;
-}
+/* Section  Les plus populaires */
+/* Section  Les plus populaires */
 
 #title_pop {
     display: flex;
@@ -263,6 +258,15 @@ h1>span {
 
 #title_pop h2 {
     margin-left: 10px;
+}
+
+#popular {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
 }
 
 .card_2 {
@@ -286,17 +290,24 @@ h1>span {
     margin-left: 3px;
 }
 
-#popular a {
-    text-decoration: none;
-}
-
 .rating {
     display: inline-block;
+}
+
+#popular picture img {
+    width: 100%;
+    height : 15vh;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 #popular picture {
     width: 50%;
     border-radius: 5px;
+}
+
+#popular a {
+    text-decoration: none;
 }
 
 /* ////////////////////// */
