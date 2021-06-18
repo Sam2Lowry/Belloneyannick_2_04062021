@@ -32,6 +32,15 @@
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
 
+/* Hover image  */
+
+picture:hover {
+    opacity: .5;
+}
+
+
+/* Header */
+
 nav {
     display: flex;
     height: 80px;
@@ -180,7 +189,6 @@ h1>span {
 }
 
 /* Section Hébergement à Marseille */
-/* Section Hébergement à Marseille */
 
 #entitle {
     width: 100%;
@@ -201,10 +209,12 @@ h1>span {
 
 #location picture img {
     width: 100%;
+    opacity: 1;
     height: 70%;
     object-fit: cover;
     margin: auto;
     border-radius: 5px;
+    transition: .3s ease-in-out;
 }
 
 #location a {
@@ -240,7 +250,6 @@ h1>span {
     margin: 15px 0px 15px 10px;
 }
 
-/* Section  Les plus populaires */
 /* Section  Les plus populaires */
 
 #title_pop {
@@ -296,9 +305,11 @@ h1>span {
 
 #popular picture img {
     width: 100%;
-    height : 15vh;
+    opacity: 1;
+    height: 15vh;
     object-fit: cover;
     border-radius: 5px;
+    transition: .3s ease-in-out;
 }
 
 #popular picture {
