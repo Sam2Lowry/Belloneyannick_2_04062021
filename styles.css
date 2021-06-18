@@ -38,7 +38,6 @@ picture:hover {
     opacity: .5;
 }
 
-
 /* Header */
 
 nav {
@@ -319,6 +318,39 @@ h1>span {
 
 #popular a {
     text-decoration: none;
+}
+
+/* Activity */
+
+#activity a {
+    text-decoration: none;
+}
+
+#activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#title_act {
+    display: flex;
+    width: 100%;
+}
+
+.card_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+#activity picture {}
+
+#activity picture img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* ////////////////////// */
