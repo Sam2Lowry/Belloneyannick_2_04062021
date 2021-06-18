@@ -19,9 +19,26 @@
     margin: 20px 20px 20px;
 }
 
+.fig {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.fig span {
+    font-weight: normal;
+}
+
 .filters select {
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
+
+/* Hover image  */
+
+picture:hover {
+    opacity: .5;
+}
+
+/* Header */
 
 nav {
     display: flex;
@@ -166,6 +183,12 @@ h1 {
     margin-bottom: 16px;
 }
 
+h1>span {
+    font-size: smaller;
+}
+
+/* Section Hébergement à Marseille */
+
 #entitle {
     width: 100%;
 }
@@ -174,7 +197,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 100%;
     justify-content: space-between;
     padding: 5px;
 }
@@ -183,16 +206,14 @@ h1 {
     margin-left: 10px;
 }
 
-#location h3 {
-    font-weight: bold;
-    margin-bottom: 0%;
-}
-
 #location picture img {
     width: 100%;
+    opacity: 1;
     height: 70%;
+    object-fit: cover;
     margin: auto;
     border-radius: 5px;
+    transition: .3s ease-in-out;
 }
 
 #location a {
@@ -228,21 +249,7 @@ h1 {
     margin: 15px 0px 15px 10px;
 }
 
-#popular {
-    display: flex;
-    height: 70vh;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F2F2F2;
-}
-
-#popular picture img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    border-radius: 5px;
-}
+/* Section  Les plus populaires */
 
 #title_pop {
     display: flex;
@@ -261,8 +268,18 @@ h1 {
     margin-left: 10px;
 }
 
+#popular {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
 .card_2 {
     display: flex;
+    flex-direction: row;
     width: 80%;
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
@@ -275,22 +292,73 @@ h1 {
 .card_2 .fig {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size:x-small;
+    font-size: small;
     margin-left: 3px;
-}
-.card_2 .fig h3{
-    text-align: center;
 }
 
 .rating {
     display: inline-block;
 }
 
+#popular picture img {
+    width: 100%;
+    opacity: 1;
+    height: 15vh;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
 #popular picture {
     width: 50%;
-    margin: auto;
     border-radius: 5px;
+}
+
+#popular a {
+    text-decoration: none;
+}
+
+/* ///////Activity/////// */
+
+#activity a {
+    text-decoration: none;
+}
+
+#activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#title_act {
+    display: flex;
+    width: 100%;
+}
+
+.card_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin-bottom: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+
+#activity picture {
+   height: 400px;
+
+}
+
+#activity picture img {
+    width: 100%;
+    height : 90%;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity : 1;
 }
 
 /* ////////////////////// */
@@ -305,85 +373,102 @@ ul {
 
 footer {
     display: flex;
+    background-color: #F2F2F2;
     flex-direction: row;
-    /* ////////////////////// */
-    @media screen and (max-width: 400px) {
-        #location {
-            flex-direction: column;
-        }
-        .card {
-            width: auto;
-        }
-        Article:first-child {
-            width: auto;
-        }
-        Article:nth-of-type(2) {
-            width: auto;
-        }
-        Article:last-child {
-            width: auto;
-        }
+    justify-content: space-evenly;
+}
+
+footer>div {
+    width: 80%;
+}
+
+/* ////////////////////// */
+
+@media screen and (max-width: 400px) {
+    #location {
+        flex-direction: column;
     }
-    @media screen and (max-width: 600px) {
-        Article:first-child {
-            width: auto;
-        }
-        Article:nth-of-type(2) {
-            width: auto;
-        }
-        Article:last-child {
-            width: auto;
-        }
-        #location {
-            flex-direction: column;
-            align-items: center;
-        }
-        .card {
-            width: auto;
-        }
+    .card {
+        width: auto;
     }
-    @media screen and (max-width: 1000px) {
-        .logo {
-            float: left;
-        }
-        #nav-links {
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: auto;
-            height: auto;
-        }
-        #nav-links a {
-            margin-left: 5px;
-        }
-        #nav-links a:last-child {
-            position: absolute;
-            padding-left: 115px;
-            border-bottom: 3px solid #ffffff00;
-        }
-        #nav-links a:hover {
-            text-decoration: underline 3px solid #0065FC;
-            border-top: none;
-        }
-        section {
-            flex-direction: column;
-        }
-        Article:first-child {
-            width: auto;
-        }
-        Article:nth-of-type(2) {
-            width: auto;
-        }
-        Article:last-child {
-            width: auto;
-        }
+    Article:first-child {
+        width: auto;
     }
-    @media screen and (max-width: 700px) {
-        .card {
-            width: 45%;
-        }
+    Article:nth-of-type(2) {
+        width: auto;
     }
-    @media screen and (max-width: 590px) {
-        .card {
-            width: 60%;
-        }
+    Article:last-child {
+        width: auto;
     }
+}
+
+@media screen and (max-width: 600px) {
+    Article:first-child {
+        width: auto;
+    }
+    Article:nth-of-type(2) {
+        width: auto;
+    }
+    Article:last-child {
+        width: auto;
+    }
+    #location {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: auto;
+    }
+    footer ul {
+        font-size: xx-small;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        float: left;
+    }
+    #nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+    #nav-links a {
+        margin-left: 5px;
+    }
+    #nav-links a:last-child {
+        position: absolute;
+        padding-left: 115px;
+        border-bottom: 3px solid #ffffff00;
+    }
+    #nav-links a:hover {
+        text-decoration: underline 3px solid #0065FC;
+        border-top: none;
+    }
+    section {
+        flex-direction: column;
+    }
+    Article:first-child {
+        width: auto;
+    }
+    Article:nth-of-type(2) {
+        width: auto;
+    }
+    Article:last-child {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .card {
+        width: 60%;
+    }
+}
