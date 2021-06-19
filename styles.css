@@ -374,7 +374,9 @@ h1>span {
 ul {
     list-style-type: none;
 }
-
+li{
+    margin: 10px 0;
+}
 footer {
     display: flex;
     background-color: #F2F2F2;
@@ -386,6 +388,9 @@ footer>div {
     width: 80%;
 }
 
+ul span {
+    font-size: larger;
+    font-weight: bold;
 /* ////////////////////// */
 
 @media screen and (max-width: 992px) {
