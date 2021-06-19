@@ -83,7 +83,7 @@ picture:hover {
     box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
-#marqueur {
+.marqueur {
     display: flex;
     width: 20px;
     justify-content: center;
@@ -181,6 +181,7 @@ select {
 }
 
 /* ////////////////////// */
+
 
 section {
     display: flex;
@@ -498,7 +499,6 @@ li:first-child {
     }
     #area_resize input[type=text] {
         width: 300px;
-        
     }
     section {
         flex-direction: column;
