@@ -40,13 +40,6 @@ picture:hover {
 
 /* Header */
 
-/* .navbar {
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
 #nav-links {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -186,6 +179,7 @@ Article #location {
 
 h1 {
     margin-bottom: 16px;
+    font-size: large;
 }
 
 h1>span {
@@ -374,9 +368,11 @@ h1>span {
 ul {
     list-style-type: none;
 }
-li{
+
+li {
     margin: 10px 0;
 }
+
 footer {
     display: flex;
     background-color: #F2F2F2;
@@ -388,9 +384,11 @@ footer>div {
     width: 80%;
 }
 
-ul span {
+li:first-child {
     font-size: larger;
     font-weight: bold;
+}
+
 /* ////////////////////// */
 
 @media screen and (max-width: 992px) {
