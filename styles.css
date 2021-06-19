@@ -40,13 +40,6 @@ picture:hover {
 
 /* Header */
 
-/* .navbar {
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
 #nav-links {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -80,15 +73,6 @@ picture:hover {
 }
 
 /* ////////////////////// */
-
-#area h1 {
-    font-size: larger;
-}
-
-#area h1 span {
-    font-weight: normal;
-    font-size: medium;
-}
 
 #area_bar {
     display: flex;
@@ -124,6 +108,43 @@ picture:hover {
     cursor: pointer;
     font-size: small;
 }
+
+/* barre de recherche < 1000 px */
+
+#area_resize {
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 15px;
+    width: max-content;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
+}
+
+.butt_where {
+    font-family: FontAwesome, 'ralewaythin', sans-serif;
+}
+
+#area_resize input, input.button {
+    height: 30px;
+    color: #030303;
+    text-decoration: none;
+    border: none;
+}
+
+#area_resize input[type=submit] {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: small;
+}
+
+#area_resize {
+    visibility: hidden;
+    height: 0;
+}
+
+/* barre de recherche < 1000 px */
 
 .filters {
     margin-bottom: 20px;
@@ -186,6 +207,7 @@ Article #location {
 
 h1 {
     margin-bottom: 16px;
+    font-size: large;
 }
 
 h1>span {
@@ -374,9 +396,11 @@ h1>span {
 ul {
     list-style-type: none;
 }
-li{
+
+li {
     margin: 10px 0;
 }
+
 footer {
     display: flex;
     background-color: #F2F2F2;
@@ -388,14 +412,16 @@ footer>div {
     width: 80%;
 }
 
-ul span {
+li:first-child {
     font-size: larger;
     font-weight: bold;
+}
+
 /* ////////////////////// */
 
 @media screen and (max-width: 992px) {
     h1 {
-        font-size: small;
+        font-size: medium;
     }
     section {
         flex-direction: column;
@@ -426,7 +452,7 @@ ul span {
         padding: 5px;
     }
     .card_2 {
-        width: 50%;
+        width: 70%;
         justify-content: space-between;
     }
 }
@@ -435,6 +461,7 @@ ul span {
     #nav-links {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
     #nav-links div:last-child {
         order: 2;
@@ -443,6 +470,7 @@ ul span {
     .logo {
         order: 1;
         width: 50%;
+        text-align: center;
     }
     .logo img {
         justify-self: center;
@@ -458,6 +486,19 @@ ul span {
     }
     h1 {
         font-size: small;
+    }
+    #area_bar {
+        visibility: hidden;
+        height: 0;
+    }
+    #area_resize {
+        text-align: center;
+        visibility: visible;
+        height: auto;
+    }
+    #area_resize input[type=text] {
+        width: 300px;
+        
     }
     section {
         flex-direction: column;
@@ -478,7 +519,7 @@ ul span {
     }
     #location {
         flex-direction: column;
-        width: 50%;
+        width: 70%;
         margin: auto;
         margin-bottom: 15px;
     }
