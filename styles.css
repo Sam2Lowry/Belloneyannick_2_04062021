@@ -110,6 +110,7 @@ picture:hover {
 }
 
 /* barre de recherche < 1000 px */
+
 #area_resize {
     display: flex;
     border: 3px solid #F2F2F2;
@@ -118,6 +119,7 @@ picture:hover {
     margin-bottom: 20px;
     box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
+
 .butt_where {
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
@@ -419,7 +421,7 @@ li:first-child {
 
 @media screen and (max-width: 992px) {
     h1 {
-        font-size: small;
+        font-size: medium;
     }
     section {
         flex-direction: column;
@@ -459,7 +461,7 @@ li:first-child {
     #nav-links {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     #nav-links div:last-child {
         order: 2;
@@ -490,9 +492,13 @@ li:first-child {
         height: 0;
     }
     #area_resize {
+        text-align: center;
         visibility: visible;
         height: auto;
-       
+    }
+    #area_resize input[type=text] {
+        width: 300px;
+        
     }
     section {
         flex-direction: column;
