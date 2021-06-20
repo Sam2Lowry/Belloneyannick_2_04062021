@@ -108,6 +108,7 @@ picture:hover {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
+
 }
 
 /* barre de recherche < 1000 px */
@@ -570,8 +571,8 @@ li:first-child {
         visibility: visible;
         height: auto;
     }
-    #area_resize input[type=text] {
-        width: 300px;
+    /* #area_resize input[type=text] {
+        width: 300px; */
     }
     section {
         flex-direction: column;
