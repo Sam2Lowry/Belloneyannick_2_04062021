@@ -173,33 +173,70 @@ select {
     padding: 0.2em 0.2em;
     background-color: #DEEBFF;
 } */
-form{
+
+form {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
 }
+
 .filters span {
     font-weight: 700;
-    margin-right: 10px;
+    margin: auto;
+    
 }
 
 .filters i {
     font-size: small;
 }
 
+#eco {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: x-small;
+    width: 20vh;
+}
+
+#persons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: x-small;
+    
+}
+
+#mood {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: x-small;
+    
+}
+
 #pet {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    font-size: x-small;
+    
 }
 
 .btn_icon {
     display: flex;
-    border: 1px solid black;
+    border: 1px solid rgb(24, 12, 201);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
 }
 
 .filters button {
     background: none;
-    border: 1px solid black;
+    border: 1px solid rgb(167, 20, 20);
+    padding: 0px;
     border-radius: 20px;
+    margin: auto;
 }
 
 .filters button .fas {
