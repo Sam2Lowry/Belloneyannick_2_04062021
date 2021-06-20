@@ -177,7 +177,7 @@ select {
 form {
     display: flex;
     justify-content: flex-start;
-    width: 60%;
+    width: 50%;
 }
 
 .filters span {
@@ -195,7 +195,8 @@ form {
     justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    width: 10vh;
+    font-weight: bold;
+    /* width: 16vh; */
     height: 32px;
 }
 #persons {
@@ -204,7 +205,8 @@ form {
     justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    width: 10vh;
+    font-weight: bold;
+    /* width: 16vh; */
     height: 32px;
 }
 #mood {
@@ -213,7 +215,8 @@ form {
     justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    width: 10vh;
+    font-weight: bold;
+    /* width: 16vh; */
     height: 32px;
 }
 #pet {
@@ -222,7 +225,8 @@ form {
     justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    width: 10vh;
+    font-weight: bold;
+    /* width: 16vh; */
     height: 32px;
 }
 
