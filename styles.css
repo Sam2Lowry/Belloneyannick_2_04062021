@@ -176,13 +176,20 @@ select {
 
 .filters span {
     font-weight: 700;
+    margin-right: 10px;
+}
+.filters i {
+    font-size: small;
 }
 
-.filters button{
-    background-color: red;
+.filters button {
+    background: none;
+    border: 1px solid black;
+}
+.filters button .fas{
+    margin-right: 10px;
 }
 /* ////////////////////// */
-
 
 section {
     display: flex;
