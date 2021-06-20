@@ -177,12 +177,12 @@ select {
 form {
     display: flex;
     justify-content: flex-start;
+    width: 60%;
 }
 
 .filters span {
     font-weight: 700;
     margin: auto;
-    
 }
 
 .filters i {
@@ -192,48 +192,54 @@ form {
 #eco {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    width: 20vh;
+    width: 10vh;
+    height: 32px;
 }
-
 #persons {
     display: flex;
     align-items: center;
+    justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    
+    width: 10vh;
+    height: 32px;
 }
-
 #mood {
     display: flex;
     align-items: center;
+    justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    
+    width: 10vh;
+    height: 32px;
 }
-
 #pet {
     display: flex;
     align-items: center;
+    justify-content: row;
     flex-direction: row;
     font-size: x-small;
-    
+    width: 10vh;
+    height: 32px;
 }
 
 .btn_icon {
     display: flex;
-    border: 1px solid rgb(24, 12, 201);
+    background-color: #DEEBFF;
+    box-shadow: inset 1px 1px 1px 1px #DEEBFF;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .filters button {
     background: none;
-    border: 1px solid rgb(167, 20, 20);
+    border: 1px solid #F2F2F2;
     padding: 0px;
     border-radius: 20px;
     margin: auto;
