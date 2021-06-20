@@ -147,18 +147,11 @@ picture:hover {
 
 /* barre de recherche < 1000 px */
 
-/* .filters {
-    margin-bottom: 20px;
-} */
+/* /////////////////Filtres////////////// */
 
-.filters span {
-    font-weight: 700;
-}
-
-.select-filters {
+/* .select-filters {
     display: inline-block;
     margin-left: 15px;
-    /* margin-bottom: 20px; */
     border: 3px solid #F2F2F2;
     border-radius: 15px;
     box-shadow: inset 0px 0px 2px 2px #F2F2F2;
@@ -179,8 +172,15 @@ select {
     box-shadow: 0px 0px 5px #DEEBFF;
     padding: 0.2em 0.2em;
     background-color: #DEEBFF;
+} */
+
+.filters span {
+    font-weight: 700;
 }
 
+.filters button{
+    background-color: red;
+}
 /* ////////////////////// */
 
 
