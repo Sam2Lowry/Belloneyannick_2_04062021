@@ -21,9 +21,9 @@
 
                     <div id="nav-links">
                         <div class="logo"><img src="img/logo/Reservia.svg" alt="reservia logo"></div>
-                        <div> <a href="#">Hébergement</a></div>
-                        <div> <a href="#">Activités</a></div>
-                        <div> <a href="#">S'inscrire</a></div>
+                        <div> <a href=#location>Hébergement</a></div>
+                        <div> <a href=#activity>Activités</a></div>
+                        <div id="register"> <a href="#">S'inscrire</a></div>
                     </div>
                 </nav>
                 <h1>Trouvez votre hébergement pour des vacances de rêves <br>
@@ -51,38 +51,37 @@
 
 
                     <div class="filters">
-                        <!-- <span>Filtres</span> -->
+                      
                         <form action="#">
                             <span>Filtres</span>
-                            <div class="select-filters">
-                                <i class='fas fa-money-bill-wave' style="color:#0065FC"></i>
-                                <select name="price" id="price">
-                                    <option value="eco">Economique</option>
-                                </select>
-                            </div>
-                            <div class="select-filters">
-                                <i class='fas fa-child' style="color:#0065FC"></i>
-                                <select name="persons" id="persons">
-                                    <option value="persons">Familial</option>
-                                </select>
-                            </div>
-                            <div class="select-filters">
-                                <i class='fas fa-heart' style="color:#0065FC"></i>
-                                <select name="mood" id="mood">
-                                    <option value="mood">Romantique</option>
-                                </select>
-                            </div>
-                            <div class="select-filters">
-                                <i class='fas fa-dog' style="color:#0065FC"></i>
-                                <select name="pet" id="pet">
-                                    <option value="pet">Animaux autorisés</option>
-                                </select>
-                            </div>
+
+
+                            <button type="button" id="eco" name="eco" />
+                            <div class="btn_icon"><i class='fas fa-money-bill-wave'></i></div>
+
+                            <div class="btn_txt">Économique</div></button>
+
+                            <button type="button" id="persons" name="persons" />
+                            <div class="btn_icon"><i class='fas fa-child'></i></div>
+
+                            <div class="btn_txt">Familial</div></button>
+
+                            <button type="button" id="mood" name="mood" />
+                            <div class="btn_icon"><i class='fas fa-heart'></i></div>
+
+                            <div class="btn_txt">Romantique</div></button>
+
+                            <button type="button" id="pet" name="pet" />
+                            <div class="btn_icon"><i class='fas fa-dog'></i></div>
+
+                            <div class="btn_txt">Animaux autorisés</div></button>
+                   
                         </form>
-                        <p> <i class="fa fa-info-circle" aria-hidden="true" style=color:#0065FC></i> Plus de 500
+                        
+                    </div>
+                    <p> <i class="fa fa-info-circle" aria-hidden="true" style=color:#0065FC></i> Plus de 500
                             logements
                             sont disponibles dans cette ville</p>
-                    </div>
                 </div>
             </header>
             <section>
@@ -109,7 +108,7 @@
                                     style="color:#0065FC"></i><i class='fas fa-star' style="color:#0065FC"></i><i
                                     class='fas fa-star' style="color:#0065FC"></i><i class='fas fa-star'
                                     style="color:#cccccc"></i>
-                                   
+
 
                             </div>
 
@@ -285,12 +284,51 @@
 
                         <a href="#" class="card_3">
                             <picture>
-                                <img src="img/activites/3_medium/port.jpg" alt="Hôtel Tout bleu et Blanc">
+                                <img src="img/activites/3_medium/port.jpg" alt="Vieux Port">
                             </picture>
                             <div class="fig">
                                 Vieux Port
                             </div>
-
+                        </a>
+                        <a href="#" class="card_3">
+                            <picture>
+                                <img src="img/activites/3_medium/fort.jpg" alt="Fort de Pomègues">
+                            </picture>
+                            <div class="fig">
+                                Fort de Pomègues
+                            </div>
+                        </a>
+                        <a href="#" class="card_3">
+                            <picture>
+                                <img src="img/activites/3_medium/frioul.jpg" alt="Îles du Frioul">
+                            </picture>
+                            <div class="fig">
+                                Îles du Frioul
+                            </div>
+                        </a>
+                        <a href="#" class="card_3">
+                            <picture>
+                                <img src="img/activites/3_medium/parc.jpg" alt="Parc National des Calanques">
+                            </picture>
+                            <div class="fig">
+                                Parc National des Calanques
+                            </div>
+                        </a>
+                        <a href="#" class="card_3">
+                            <picture>
+                                <img src="img/activites/3_medium/dame.jpg" alt="Notre-Dame-de-la-Garde">
+                            </picture>
+                            <div class="fig">
+                                Notre-Dame-de-la-Garde
+                            </div>
+                        </a>
+                        <a href="#" class="card_3">
+                            <picture>
+                                <img src="img/activites/3_medium/longchamp.jpg" alt="Parc Longchamp">
+                            </picture>
+                            <div class="fig">
+                                Parc Longchamp
+                            </div>
                         </a>
 
                     </div>

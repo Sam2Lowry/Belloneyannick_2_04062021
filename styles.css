@@ -50,6 +50,7 @@ picture:hover {
 #nav-links a {
     flex: 1;
     text-decoration: none;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +69,7 @@ picture:hover {
     width: 50%;
 }
 
-#nav-links a:last-child {
+#register a {
     color: #0065FC;
 }
 
@@ -79,7 +80,6 @@ picture:hover {
     border: 3px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
-    margin-bottom: 20px;
     box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
@@ -107,6 +107,7 @@ picture:hover {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
+   
 }
 
 /* barre de recherche < 1000 px */
@@ -144,44 +145,74 @@ picture:hover {
     height: 0;
 }
 
-/* barre de recherche < 1000 px */
 
-.filters {
-    margin-bottom: 20px;
+
+/* /////////////////Filtres////////////// */
+
+
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
 }
 
 .filters span {
     font-weight: 700;
+    margin: auto;
 }
 
-.select-filters {
-    display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    border: 3px solid #F2F2F2;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 2px 2px #F2F2F2;
+.filters i {
+    font-size: small;
 }
 
-#select-filters select {
-    text-decoration: none;
+#eco, #persons, #mood, #pet {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    flex-direction: row;
+    font-size: small;
+    font-weight: 700;
+    width: 20%;
+    height: 32px;
+    opacity: 1;
+    transition: 1.3 ease-in;
 }
 
-select {
-    border: none;
-    border-radius: 15px;
+#eco:hover, #persons:hover, #mood:hover, #pet:hover {
+    opacity: 0.5;
 }
 
-.select-filters .fas {
-    display: inline-block;
-    border-radius: 40px;
-    box-shadow: 0px 0px 5px #DEEBFF;
-    padding: 0.2em 0.2em;
+.btn_icon {
+    display: flex;
+    position: static;
     background-color: #DEEBFF;
+    box-shadow: inset 1px 1px 1px 1px #DEEBFF;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.btn_txt {
+    width: 100%;
+}
+
+.filters button {
+    background: none;
+    border: 1px solid #F2F2F2;
+    padding: 0px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.filters button .fas {
+    color: #0065FC;
 }
 
 /* ////////////////////// */
-
 
 section {
     display: flex;
@@ -190,7 +221,7 @@ section {
 }
 
 Article:first-child {
-    width: 60%;
+    width: 65%;
 }
 
 Article:nth-of-type(2) {
@@ -199,6 +230,7 @@ Article:nth-of-type(2) {
 
 Article:last-child {
     width: auto;
+    
 }
 
 Article #location {
@@ -227,7 +259,7 @@ h1>span {
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 5px 0px 5px;
 }
 
 #location h2 {
@@ -251,6 +283,7 @@ h1>span {
 .card {
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
+    margin-bottom: 20px;
     padding: 2px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
@@ -274,7 +307,8 @@ h1>span {
 .read_more {
     width: 100%;
     font-weight: bold;
-    margin: 15px 0px 15px 10px;
+    margin: 0px 0px 0px 10px;
+    height: auto;
 }
 
 /* Section  Les plus populaires */
@@ -294,6 +328,7 @@ h1>span {
 
 #title_pop h2 {
     margin-left: 10px;
+    margin-bottom: 30px;
 }
 
 #popular {
@@ -311,6 +346,7 @@ h1>span {
     width: 80%;
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
+    margin-bottom: 20px;
     padding: 2px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
@@ -333,7 +369,7 @@ h1>span {
 #popular picture img {
     width: 100%;
     opacity: 1;
-    height: 15vh;
+    height: 16vh;
     object-fit: cover;
     border-radius: 5px;
     transition: .3s ease-in-out;
@@ -358,12 +394,14 @@ h1>span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
     width: 100%;
 }
 
 #title_act {
     display: flex;
     width: 100%;
+    
 }
 
 .card_3 {
@@ -372,7 +410,7 @@ h1>span {
     align-items: center;
     width: 15%;
     margin-bottom: 20px;
-    border: 1px solid #F2F2F2;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.048);
     border-radius: 15px;
 }
 
@@ -400,6 +438,7 @@ ul {
 
 li {
     margin: 10px 0;
+    font-weight: bold;
 }
 
 footer {
@@ -423,6 +462,13 @@ li:first-child {
 @media screen and (max-width: 992px) {
     h1 {
         font-size: medium;
+    }
+    .filters form {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    #eco, #persons, #mood, #pet{
+        width: auto;   
     }
     section {
         flex-direction: column;
@@ -497,9 +543,10 @@ li:first-child {
         visibility: visible;
         height: auto;
     }
-    #area_resize input[type=text] {
-        width: 300px;
-    }
+    
+    
+    /* #area_resize input[type=text] {
+        width: 300px; */
     section {
         flex-direction: column;
     }
@@ -527,4 +574,6 @@ li:first-child {
         font-size: xx-small;
         padding: 5px;
     }
+    
+    
 }
