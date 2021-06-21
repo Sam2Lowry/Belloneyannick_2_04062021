@@ -248,6 +248,8 @@ h1>span {
 }
 
 /* Section Hébergement à Marseille */
+/* Section Hébergement à Marseille */
+/* Section Hébergement à Marseille */
 
 #entitle {
     width: 100%;
@@ -298,6 +300,8 @@ h1>span {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    margin-top: 5px;
+    line-height: 1.5em;
 }
 
 .rating {
@@ -311,6 +315,8 @@ h1>span {
     height: auto;
 }
 
+/* Section  Les plus populaires */
+/* Section  Les plus populaires */
 /* Section  Les plus populaires */
 
 #title_pop {
@@ -355,11 +361,13 @@ h1>span {
 
 .card_2 .fig {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: small;
-    margin-left: 3px;
+    font-size: medium;
+    line-height: 1.4em;
+    
 }
 
 .rating {
@@ -371,7 +379,7 @@ h1>span {
     opacity: 1;
     height: 16vh;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     transition: .3s ease-in-out;
 }
 
@@ -382,9 +390,13 @@ h1>span {
 
 #popular a {
     text-decoration: none;
+    color: black;
+
 }
 
-/* ///////Activity/////// */
+/* Section  Activités à Marseille */
+/* Section  Activités à Marseille */
+/* Section  Activités à Marseille */
 
 #activity a {
     text-decoration: none;
