@@ -80,7 +80,6 @@ picture:hover {
     border: 3px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
-    /* margin-bottom: 10px; Calculer le ration % post activity réglage */
     box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
@@ -108,6 +107,7 @@ picture:hover {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
+   
 }
 
 /* barre de recherche < 1000 px */
@@ -145,34 +145,11 @@ picture:hover {
     height: 0;
 }
 
-/* barre de recherche < 1000 px */
+
 
 /* /////////////////Filtres////////////// */
 
-/* .select-filters {
-    display: inline-block;
-    margin-left: 15px;
-    border: 3px solid #F2F2F2;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 2px 2px #F2F2F2;
-}
 
-#select-filters select {
-    text-decoration: none;
-}
-
-select {
-    border: none;
-    border-radius: 15px;
-}
-
-.select-filters .fas {
-    display: inline-block;
-    border-radius: 40px;
-    box-shadow: 0px 0px 5px #DEEBFF;
-    padding: 0.2em 0.2em;
-    background-color: #DEEBFF;
-} */
 
 form {
     display: flex;
@@ -244,7 +221,7 @@ section {
 }
 
 Article:first-child {
-    width: 60%;
+    width: 65%;
 }
 
 Article:nth-of-type(2) {
@@ -253,6 +230,7 @@ Article:nth-of-type(2) {
 
 Article:last-child {
     width: auto;
+    
 }
 
 Article #location {
@@ -281,7 +259,7 @@ h1>span {
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 5px 0px 5px;
 }
 
 #location h2 {
@@ -305,6 +283,7 @@ h1>span {
 .card {
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
+    margin-bottom: 20px;
     padding: 2px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
@@ -328,7 +307,8 @@ h1>span {
 .read_more {
     width: 100%;
     font-weight: bold;
-    margin: 15px 0px 15px 10px;
+    margin: 0px 0px 0px 10px;
+    height: auto;
 }
 
 /* Section  Les plus populaires */
@@ -355,7 +335,7 @@ h1>span {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #F2F2F2;
 }
@@ -366,6 +346,7 @@ h1>span {
     width: 80%;
     border: 3px solid rgb(255, 255, 255);
     margin: 5px;
+    margin-bottom: 20px;
     padding: 2px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
@@ -413,12 +394,14 @@ h1>span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
     width: 100%;
 }
 
 #title_act {
     display: flex;
     width: 100%;
+    
 }
 
 .card_3 {
