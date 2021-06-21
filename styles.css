@@ -38,11 +38,39 @@ a:visited {
 
 /* Hover image  */
 
+/* Hover image  */
+
+/* Hover image  */
+
 picture:hover {
-    opacity: .5;
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
 }
 
-/* Header */
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* /////////////////Header/////////// */
+
+/* /////////////////Header/////////// */
+
+/* /////////////////Header/////////// */
 
 #nav-links {
     display: flex;
@@ -77,7 +105,9 @@ picture:hover {
     color: #0065FC;
 }
 
-/* ////////////////////// */
+/* ////////// Area bar //////////// */
+
+/* ////////// Area bar //////////// */
 
 #area_bar {
     display: flex;
@@ -111,9 +141,8 @@ picture:hover {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
+    height: auto;
 }
-
-/* barre de recherche < 1000 px */
 
 #area_resize {
     display: flex;
@@ -147,6 +176,10 @@ picture:hover {
     visibility: hidden;
     height: 0;
 }
+
+/* /////////////////Filtres////////////// */
+
+/* /////////////////Filtres////////////// */
 
 /* /////////////////Filtres////////////// */
 
@@ -211,7 +244,11 @@ form {
     color: #0065FC;
 }
 
-/* ////////////////////// */
+/* /////////// Body ///////////// */
+
+/* /////////// Body ///////////// */
+
+/* /////////// Body ///////////// */
 
 section {
     display: flex;
@@ -229,11 +266,6 @@ Article:nth-of-type(2) {
 
 Article:last-child {
     width: auto;
-}
-
-Article #location {
-    background-color: #F2F2F2;
-    border-radius: 5px;
 }
 
 h1 {
@@ -257,6 +289,8 @@ h1>span {
 
 #location {
     display: flex;
+    background-color: #F2F2F2;
+    border-radius: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     height: 100%;
@@ -341,6 +375,7 @@ h1>span {
 
 #popular {
     display: flex;
+    border-radius: 15px;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -406,7 +441,8 @@ h1>span {
 }
 
 #title_act {
-    display: flex;
+    /* display: flex; */
+    text-align: center;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -416,7 +452,7 @@ h1>span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin-bottom: 40px;
 }
@@ -441,6 +477,16 @@ h1>span {
     border-radius: 5px;
     object-fit: cover;
     opacity: 1;
+}
+
+#activity .fig {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    
 }
 
 /* Footer */
