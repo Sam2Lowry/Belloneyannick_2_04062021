@@ -196,16 +196,16 @@ form {
     justify-content: row;
     flex-direction: row;
     font-size: small;
-    font-weight:700;
+    font-weight: 700;
     width: 20%;
     height: 32px;
     opacity: 1;
     transition: 1.3 ease-in;
 }
-#eco:hover, #persons:hover, #mood:hover, #pet:hover{
+
+#eco:hover, #persons:hover, #mood:hover, #pet:hover {
     opacity: 0.5;
 }
-    
 
 .btn_icon {
     display: flex;
@@ -218,10 +218,11 @@ form {
     width: 30px;
     height: 30px;
 }
-.btn_txt{
-    
+
+.btn_txt {
     width: 100%;
 }
+
 .filters button {
     background: none;
     border: 1px solid #F2F2F2;
@@ -446,7 +447,6 @@ h1>span {
 
 .footer-list a {
     text-decoration: none;
-
 }
 
 ul {
@@ -479,6 +479,13 @@ li:first-child {
 @media screen and (max-width: 992px) {
     h1 {
         font-size: medium;
+    }
+    .filters form {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    #eco, #persons, #mood, #pet{
+        width: auto;   
     }
     section {
         flex-direction: column;
@@ -553,6 +560,8 @@ li:first-child {
         visibility: visible;
         height: auto;
     }
+    
+    
     /* #area_resize input[type=text] {
         width: 300px; */
     section {
@@ -582,4 +591,6 @@ li:first-child {
         font-size: xx-small;
         padding: 5px;
     }
+    
+    
 }
