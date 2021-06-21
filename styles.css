@@ -405,17 +405,20 @@ h1>span {
     text-decoration: none;
 }
 
+#title_act {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 #activity {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-}
-
-#title_act {
-    display: flex;
-    width: 100%;
+    margin-bottom: 40px;
 }
 
 .card_3 {
