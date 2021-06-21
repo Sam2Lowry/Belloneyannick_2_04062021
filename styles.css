@@ -32,6 +32,10 @@
     font-family: FontAwesome, 'ralewaythin', sans-serif;
 }
 
+a:visited {
+    color: black;
+}
+
 /* Hover image  */
 
 picture:hover {
@@ -107,7 +111,6 @@ picture:hover {
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     font-size: small;
-   
 }
 
 /* barre de recherche < 1000 px */
@@ -145,11 +148,7 @@ picture:hover {
     height: 0;
 }
 
-
-
 /* /////////////////Filtres////////////// */
-
-
 
 form {
     display: flex;
@@ -230,7 +229,6 @@ Article:nth-of-type(2) {
 
 Article:last-child {
     width: auto;
-    
 }
 
 Article #location {
@@ -246,6 +244,10 @@ h1 {
 h1>span {
     font-size: smaller;
 }
+
+/* Section Hébergement à Marseille */
+
+/* Section Hébergement à Marseille */
 
 /* Section Hébergement à Marseille */
 
@@ -298,6 +300,8 @@ h1>span {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    margin-top: 5px;
+    line-height: 1.5em;
 }
 
 .rating {
@@ -310,6 +314,10 @@ h1>span {
     margin: 0px 0px 0px 10px;
     height: auto;
 }
+
+/* Section  Les plus populaires */
+
+/* Section  Les plus populaires */
 
 /* Section  Les plus populaires */
 
@@ -338,6 +346,7 @@ h1>span {
     justify-content: space-between;
     align-items: center;
     background-color: #F2F2F2;
+    text-align: center;
 }
 
 .card_2 {
@@ -355,11 +364,12 @@ h1>span {
 
 .card_2 .fig {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: small;
-    margin-left: 3px;
+    font-size: medium;
+    line-height: 1.4em;
 }
 
 .rating {
@@ -371,7 +381,7 @@ h1>span {
     opacity: 1;
     height: 16vh;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     transition: .3s ease-in-out;
 }
 
@@ -382,9 +392,14 @@ h1>span {
 
 #popular a {
     text-decoration: none;
+    color: black;
 }
 
-/* ///////Activity/////// */
+/* Section  Activités à Marseille */
+
+/* Section  Activités à Marseille */
+
+/* Section  Activités à Marseille */
 
 #activity a {
     text-decoration: none;
@@ -394,14 +409,13 @@ h1>span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
 }
 
 #title_act {
     display: flex;
     width: 100%;
-    
 }
 
 .card_3 {
@@ -426,7 +440,11 @@ h1>span {
     opacity: 1;
 }
 
-/* ////////////////////// */
+/* Footer */
+
+/* Footer */
+
+/* Footer */
 
 .footer-list a {
     text-decoration: none;
@@ -439,6 +457,7 @@ ul {
 li {
     margin: 10px 0;
     font-weight: bold;
+    font-size: medium;
 }
 
 footer {
@@ -453,8 +472,9 @@ footer>div {
 }
 
 li:first-child {
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 
 /* ////////////////////// */
@@ -467,8 +487,8 @@ li:first-child {
         flex-wrap: wrap;
         width: 80%;
     }
-    #eco, #persons, #mood, #pet{
-        width: auto;   
+    #eco, #persons, #mood, #pet {
+        width: auto;
     }
     section {
         flex-direction: column;
@@ -543,8 +563,6 @@ li:first-child {
         visibility: visible;
         height: auto;
     }
-    
-    
     /* #area_resize input[type=text] {
         width: 300px; */
     section {
@@ -574,6 +592,4 @@ li:first-child {
         font-size: xx-small;
         padding: 5px;
     }
-    
-    
 }
