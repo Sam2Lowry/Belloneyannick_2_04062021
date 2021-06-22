@@ -77,7 +77,6 @@ picture:hover {
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     width: 100%;
-   
 }
 
 #nav-links a {
@@ -88,11 +87,13 @@ picture:hover {
     Color: black;
     border-top: 3px solid #ffffff00;
 }
-#nav-links div{
+
+#nav-links div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 #nav-links a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
@@ -233,7 +234,7 @@ form {
 
 .btn_txt {
     width: auto;
-    margin : auto;
+    margin: auto;
 }
 
 .filters button {
@@ -339,7 +340,7 @@ h1>span {
     flex-direction: column;
     margin-left: 5px;
     margin-top: 5px;
-    line-height:150%;
+    line-height: 150%;
 }
 
 .rating {
@@ -416,7 +417,7 @@ h1>span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height:150%;
+    line-height: 150%;
 }
 
 #popular picture img {
@@ -496,8 +497,6 @@ h1>span {
     font-size: medium;
     margin-bottom: 20px;
 }
-
-
 
 /* Footer */
 
@@ -590,7 +589,6 @@ li:first-child {
     #activity .fig {
         font-size: xx-small;
         margin-bottom: 20px;
-    
     }
 }
 
@@ -600,44 +598,42 @@ li:first-child {
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-   
     #nav-links div:last-child {
         order: 2;
         width: 50%;
-        
+        text-align: center;
     }
     .logo {
         order: 1;
         width: 50%;
-        
     }
-   .logo img {
+    .logo img {
         justify-self: center;
     }
     #nav-links div:nth-of-type(2) {
         order: 3;
         display: flex;
         width: 50%;
+        text-align: center;
     }
     #nav-links div:nth-of-type(3) {
         order: 4;
         width: 50%;
+        text-align: center;
     }
     h1 {
         font-size: small;
     }
-
-#area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.filters span {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-}
+    #area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filters span {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
     #area_bar {
         visibility: hidden;
         height: 0;
