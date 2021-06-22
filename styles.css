@@ -644,14 +644,13 @@ li:first-child {
         height: auto;
         align-self: flex-start;
     }
-    /* #area_resize input[type=text] {
-        width: 300px; */
+    
     section {
         flex-direction: column;
     }
     Article:first-child {
         display: flex;
-        width: auto;
+        width: 90%;
     }
     Article:nth-of-type(2) {
         width: auto;
@@ -660,12 +659,12 @@ li:first-child {
         width: auto;
     }
     .card {
-        width: auto;
-        justify-content: center;
+        width: 90%;
+        
     }
     #location {
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         margin: auto;
         margin-bottom: 15px;
     }
