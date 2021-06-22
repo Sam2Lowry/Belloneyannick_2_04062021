@@ -608,7 +608,7 @@ li:first-child {
         width: 50%;
     }
     .logo img {
-        justify-self: center;
+        margin: auto;
     }
     #nav-links div:nth-of-type(2) {
         order: 3;
@@ -644,9 +644,9 @@ li:first-child {
         height: auto;
         align-self: flex-start;
     }
-    
     section {
         flex-direction: column;
+        align-items: center;
     }
     Article:first-child {
         display: flex;
@@ -660,13 +660,20 @@ li:first-child {
     }
     .card {
         width: 90%;
-        
     }
     #location {
         flex-direction: column;
-        width: 90%;
+        align-items : center;
+        width: 100%;
         margin: auto;
         margin-bottom: 15px;
+    }
+    #location h2{
+        text-align: center;
+    }
+    .read_more{
+        margin-bottom: 5px;
+        margin-left: 0;
     }
     footer ul {
         font-size: xx-small;
