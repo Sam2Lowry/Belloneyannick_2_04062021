@@ -23,8 +23,9 @@
     font-weight: bold;
     font-size: medium;
 }
+
 .fig .price {
- font-weight: normal;
+    font-weight: normal;
 }
 
 .filters select {
@@ -431,7 +432,6 @@ h1>span {
     color: black;
 }
 
-
 /* Section  Activités à Marseille */
 
 /* Section  Activités à Marseille */
@@ -488,6 +488,7 @@ h1>span {
     text-align: center;
     font-weight: bold;
     font-size: small;
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -527,7 +528,11 @@ li:first-child {
     margin-bottom: 40px;
 }
 
-/* ////////////////////// */
+/* ///////////Responsive/////////// */
+
+/* ///////////Responsive/////////// */
+
+/* ///////////Responsive/////////// */
 
 @media screen and (max-width: 992px) {
     h1 {
@@ -564,13 +569,20 @@ li:first-child {
         margin: auto;
         margin-bottom: 15px;
     }
-    footer ul {
-        font-size: xx-small;
-        padding: 5px;
+    li:first-child {
+        font-size: small;
+    }
+    footer li {
+        font-size: small;
     }
     .card_2 {
         width: 70%;
         justify-content: space-between;
+    }
+    #activity .fig {
+        font-size: xx-small;
+        margin-bottom: 20px;
+    
     }
 }
 
