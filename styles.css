@@ -15,7 +15,7 @@
 }
 
 #bloc_page {
-    font-family: 'raleway';
+    font-family: 'raleway', sans-serif;
     margin: 20px 20px 20px;
 }
 
@@ -23,13 +23,12 @@
     font-weight: bold;
     font-size: medium;
 }
-
-.fig span {
-    font-weight: normal;
+.fig .price {
+ font-weight: normal;
 }
 
 .filters select {
-    font-family: FontAwesome, 'ralewaythin', sans-serif;
+    font-family: FontAwesome, 'raleway', sans-serif;
 }
 
 a:visited {
@@ -335,11 +334,19 @@ h1>span {
     flex-direction: column;
     margin-left: 5px;
     margin-top: 5px;
-    
 }
 
 .rating {
+    display: inline-block;
     margin-left: 3px;
+}
+
+.checked {
+    color: #0065FC;
+}
+
+.empty {
+    color: #DEEBFF;
 }
 
 .read_more {
@@ -403,12 +410,6 @@ h1>span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: medium;
-    line-height: 1.4em;
-}
-
-.rating {
-    display: inline-block;
 }
 
 #popular picture img {
@@ -430,6 +431,7 @@ h1>span {
     color: black;
 }
 
+
 /* Section  Activités à Marseille */
 
 /* Section  Activités à Marseille */
@@ -441,7 +443,6 @@ h1>span {
 }
 
 #title_act {
-    /* display: flex; */
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -482,12 +483,11 @@ h1>span {
 
 #activity .fig {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: small;
-    
 }
 
 /* Footer */
