@@ -229,7 +229,8 @@ form {
 }
 
 .btn_txt {
-    width: 100%;
+    width: auto;
+    margin : auto;
 }
 
 .filters button {
@@ -335,6 +336,7 @@ h1>span {
     flex-direction: column;
     margin-left: 5px;
     margin-top: 5px;
+    line-height:150%;
 }
 
 .rating {
@@ -411,6 +413,7 @@ h1>span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height:150%;
 }
 
 #popular picture img {
