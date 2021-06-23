@@ -493,6 +493,7 @@ Article:last-child {
     font-weight: bold;
     font-size: medium;
     margin: auto;
+    padding: 5px 0px 5px 0px;
 }
 
 .card_3 {
