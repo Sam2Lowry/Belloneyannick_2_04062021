@@ -468,13 +468,13 @@ Article:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
     margin-bottom: 40px;
 }
 
 #activity picture {
-    height: 400px;
+    height: 300px;
 }
 
 #activity picture img {
