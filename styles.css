@@ -642,6 +642,8 @@ li:first-child {
     .filters {
         display: flex;
         justify-content: space-evenly;
+        
+       
     }
     .filters span {
         width: 100%;
@@ -649,12 +651,19 @@ li:first-child {
         margin-bottom: 20px;
     }
     #eco, #persons, #mood, #pet {
-        width: 50%;
+        width: 45%;
         margin-bottom: 20px;
     }
     #eco, #persons {
         margin-bottom: 10px;
     }
+    form {
+        width: auto;
+    }
+    .filters form {
+        width: 100%;
+    }
+    
     #area_bar {
         visibility: hidden;
         height: 0;
