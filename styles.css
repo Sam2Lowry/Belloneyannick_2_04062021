@@ -474,7 +474,10 @@ Article:last-child {
 }
 
 #activity picture {
-    height: 300px;
+    height: 300px; 
+    width: 100%;
+   
+   
 }
 
 #activity picture img {
@@ -497,6 +500,7 @@ Article:last-child {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
     width: 15%;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -697,8 +701,13 @@ li:first-child {
     #activity picture {
         height: 200px;
     }
+    #activity .fig{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
     .card_3 {
         width: 33.333333%;
+        padding: 5px;
     }
     footer {
         text-align: center;
