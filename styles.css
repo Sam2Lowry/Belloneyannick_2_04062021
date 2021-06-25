@@ -99,7 +99,9 @@ picture:hover {
     color: #0065FC;
     font-weight: bold;
 }
-
+.marqueur fa{
+    color: #030303;
+}
 .logo {
     width: 50%;
 }
@@ -107,6 +109,11 @@ picture:hover {
 #register a {
     color: #0065FC;
 }
+
+p .fas {
+   color:#0065FC
+}
+
 
 /* ////////// Area bar //////////// */
 
