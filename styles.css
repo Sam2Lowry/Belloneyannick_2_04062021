@@ -112,12 +112,13 @@ picture:hover {
 
 /* ////////// Area bar //////////// */
 
-#area_bar {
-    display: flex;
-    border: 3px solid #F2F2F2;
-    border-radius: 15px;
-    width: max-content;
-    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
+.butt_where {
+    font-family: FontAwesome, 'ralewaythin', sans-serif;
+}
+
+#area_resize {
+    visibility: hidden;
+    height: 0;
 }
 
 .marqueur {
@@ -131,11 +132,20 @@ picture:hover {
     border-radius: 10px 0px 0px 10px;
 }
 
+#area_bar {
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 15px;
+    width: max-content;
+    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
+}
+
 #area_bar input, input.button {
     height: 30px;
     color: #030303;
     text-decoration: none;
     border: none;
+    text-align: center;
 }
 
 #area_bar input[type=submit] {
@@ -156,15 +166,12 @@ picture:hover {
     box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
-.butt_where {
-    font-family: FontAwesome, 'ralewaythin', sans-serif;
-}
-
 #area_resize input, input.button {
     height: 30px;
     color: #030303;
     text-decoration: none;
     border: none;
+    text-align: center;
 }
 
 #area_resize input[type=submit] {
@@ -174,11 +181,6 @@ picture:hover {
     cursor: pointer;
     font-size: small;
     height: auto;
-}
-
-#area_resize {
-    visibility: hidden;
-    height: 0;
 }
 
 /* /////////////////Filtres////////////// */
@@ -235,6 +237,7 @@ button .fas {
     width: 30px;
     height: 30px;
 }
+
 button span {
     text-align: center;
 }
@@ -668,6 +671,8 @@ li:first-child {
     .filters span {
         width: 100%;
         text-align: center;
+    }
+    .filters span:first-child {
         margin-bottom: 20px;
     }
     #eco, #persons, #mood, #pet {
