@@ -206,7 +206,7 @@ form {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     font-size: small;
     font-weight: 700;
@@ -224,7 +224,7 @@ form {
     transition: ease-in;
 }
 
-.btn_icon {
+button .fas {
     display: flex;
     position: static;
     background-color: #DEEBFF;
@@ -235,10 +235,8 @@ form {
     width: 30px;
     height: 30px;
 }
-
-.btn_txt {
-    width: auto;
-    margin: auto;
+button span {
+    text-align: center;
 }
 
 .filters button {
