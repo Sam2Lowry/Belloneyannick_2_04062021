@@ -219,7 +219,8 @@ form {
     justify-content: space-between;
     flex-direction: row;
     font-size: small;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 1px;
     width: 20%;
     height: 32px;
     opacity: 1;
