@@ -100,12 +100,20 @@ picture:hover {
     font-weight: bold;
 }
 
+.marqueur fa {
+    color: #030303;
+}
+
 .logo {
     width: 50%;
 }
 
 #register a {
     color: #0065FC;
+}
+
+p .fas {
+    color: #0065FC
 }
 
 /* ////////// Area bar //////////// */
@@ -127,7 +135,7 @@ picture:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-right: 1px solid #F2F2F2 ;
+    border-right: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -155,7 +163,6 @@ picture:hover {
     cursor: pointer;
     font-size: small;
     height: auto;
-
 }
 
 #area_resize {
@@ -212,7 +219,8 @@ form {
     justify-content: space-between;
     flex-direction: row;
     font-size: small;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 1px;
     width: 20%;
     height: 32px;
     opacity: 1;
@@ -221,9 +229,9 @@ form {
 
 #eco:hover, #persons:hover, #mood:hover, #pet:hover {
     opacity: 0.5;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     transition: ease-in;
 }
 
@@ -385,7 +393,7 @@ h1>span {
 
 #title_pop .fa {
     font-size: larger;
-    margin-right: 35px;
+    margin-right: 10%;
 }
 
 #title_pop h2 {
@@ -473,7 +481,7 @@ Article:last-child {
 #activity {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     width: 90%;
     margin-bottom: 40px;
@@ -618,6 +626,12 @@ li:first-child {
         margin: auto;
         margin-bottom: 15px;
     }
+    #title_pop {
+        justify-content: space-between;
+    }
+    #title_pop .fa {
+        margin-right: 110px;
+    }
     li:first-child {
         font-size: small;
     }
@@ -738,6 +752,12 @@ li:first-child {
     }
     #title_pop {
         justify-content: space-evenly;
+    }
+    #title_pop .fa {
+        margin-right: 0%;
+    }
+    #activity {
+        flex-wrap: wrap;
     }
     #activity picture {
         height: 200px;
