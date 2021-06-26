@@ -99,9 +99,11 @@ picture:hover {
     color: #0065FC;
     font-weight: bold;
 }
-.marqueur fa{
+
+.marqueur fa {
     color: #030303;
 }
+
 .logo {
     width: 50%;
 }
@@ -111,9 +113,8 @@ picture:hover {
 }
 
 p .fas {
-   color:#0065FC
+    color: #0065FC
 }
-
 
 /* ////////// Area bar //////////// */
 
@@ -134,7 +135,7 @@ p .fas {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-right: 1px solid #F2F2F2 ;
+    border-right: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -162,7 +163,6 @@ p .fas {
     cursor: pointer;
     font-size: small;
     height: auto;
-
 }
 
 #area_resize {
@@ -392,7 +392,7 @@ h1>span {
 
 #title_pop .fa {
     font-size: larger;
-    margin-right: 35px;
+    margin-right: 10%;
 }
 
 #title_pop h2 {
@@ -625,6 +625,12 @@ li:first-child {
         margin: auto;
         margin-bottom: 15px;
     }
+    #title_pop {
+        justify-content: space-between;
+    }
+    #title_pop .fa {
+        margin-right: 110px;
+    }
     li:first-child {
         font-size: small;
     }
@@ -745,6 +751,9 @@ li:first-child {
     }
     #title_pop {
         justify-content: space-evenly;
+    }
+    #title_pop .fa {
+        margin-right: 0%;
     }
     #activity picture {
         height: 200px;
