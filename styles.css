@@ -481,7 +481,7 @@ Article:last-child {
 #activity {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     width: 90%;
     margin-bottom: 40px;
@@ -755,6 +755,9 @@ li:first-child {
     }
     #title_pop .fa {
         margin-right: 0%;
+    }
+    #activity {
+        flex-wrap: wrap;
     }
     #activity picture {
         height: 200px;
