@@ -34,8 +34,8 @@
     font-family: FontAwesome, 'raleway', sans-serif;
 }
 
-a:visited {
-    color: black;
+a {
+    color: #030303;
 }
 
 /* Hover image  */
@@ -86,7 +86,6 @@ picture:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
-    Color: black;
     border-top: 3px solid #ffffff00;
 }
 
@@ -144,10 +143,9 @@ p .fas {
 
 #area_bar {
     display: flex;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
-    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
 #area_bar input, input.button {
@@ -169,7 +167,7 @@ p .fas {
 
 #area_resize {
     display: flex;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
     margin-bottom: 20px;
@@ -453,7 +451,6 @@ h1>span {
 
 #popular a {
     text-decoration: none;
-    color: black;
 }
 
 /* Section  Activités à Marseille */
@@ -483,7 +480,6 @@ Article:last-child {
 #activity {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     width: 90%;
     margin-bottom: 40px;
@@ -651,6 +647,23 @@ li:first-child {
 }
 
 @media screen and (max-width: 768px) {
+    .logo {
+        order: 1;
+        width: 50%;
+    }
+    .logo img {
+        margin: auto;
+    }
+    #nav-links a {
+        border-bottom: 3px solid #ffffff00;
+        border-top: none;
+    }
+    #nav-links a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        font-weight: bold;
+    }
     #nav-links {
         flex-direction: row;
         flex-wrap: wrap;
@@ -661,26 +674,25 @@ li:first-child {
         width: 50%;
         text-align: center;
     }
-    .logo {
-        order: 1;
-        width: 50%;
-    }
-    .logo img {
-        margin: auto;
-    }
     #nav-links div:nth-of-type(2) {
         order: 3;
         display: flex;
         width: 50%;
         text-align: center;
+        border-bottom: 1px solid #DEEBFF;
     }
     #nav-links div:nth-of-type(3) {
         order: 4;
         width: 50%;
         text-align: center;
+        border-bottom: 1px solid #DEEBFF;
     }
     h1 {
-        font-size: small;
+        font-size: medium;
+        text-align: center;
+    }
+    h1 span{
+        font-weight: 100;
     }
     #area {
         display: flex;
@@ -693,7 +705,8 @@ li:first-child {
     }
     .filters span {
         width: 100%;
-        text-align: center;
+        margin-left: 10px;
+        /* text-align: center; */
     }
     .filters span:first-child {
         margin-bottom: 20px;
@@ -708,9 +721,6 @@ li:first-child {
     form {
         width: auto;
     }
-    .filters form {
-        width: 100%;
-    }
     #area_bar {
         visibility: hidden;
         height: 0;
@@ -719,7 +729,10 @@ li:first-child {
         text-align: center;
         visibility: visible;
         height: auto;
-        align-self: flex-start;
+        align-self: center;
+    }
+    .filters form {
+        width: 100%;
     }
     section {
         flex-direction: column;
