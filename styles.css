@@ -34,9 +34,10 @@
     font-family: FontAwesome, 'raleway', sans-serif;
 }
 
-a:visited {
-    color: black;
+a {
+    color: #030303;
 }
+
 
 /* Hover image  */
 
@@ -86,7 +87,6 @@ picture:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
-    Color: black;
     border-top: 3px solid #ffffff00;
 }
 
@@ -144,10 +144,9 @@ p .fas {
 
 #area_bar {
     display: flex;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
-    box-shadow: inset 5px 5px 5px 5px #F2F2F2;
 }
 
 #area_bar input, input.button {
@@ -453,7 +452,6 @@ h1>span {
 
 #popular a {
     text-decoration: none;
-    color: black;
 }
 
 /* Section  Activités à Marseille */
@@ -478,14 +476,14 @@ Article:last-child {
 
 #activity a {
     text-decoration: none;
+    
 }
 
 #activity {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
-    width: 90%;
+    width:90%;
     margin-bottom: 40px;
 }
 
@@ -498,7 +496,7 @@ Article:last-child {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    object-fit: cover;
+    object-fit:cover;
     opacity: 1;
 }
 
