@@ -167,7 +167,7 @@ p .fas {
 
 #area_resize {
     display: flex;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: max-content;
     margin-bottom: 20px;
@@ -691,6 +691,9 @@ li:first-child {
         font-size: medium;
         text-align: center;
     }
+    h1 span{
+        font-weight: 100;
+    }
     #area {
         display: flex;
         flex-direction: column;
@@ -702,7 +705,8 @@ li:first-child {
     }
     .filters span {
         width: 100%;
-        text-align: center;
+        margin-left: 10px;
+        /* text-align: center; */
     }
     .filters span:first-child {
         margin-bottom: 20px;
