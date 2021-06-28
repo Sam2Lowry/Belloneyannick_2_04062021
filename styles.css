@@ -5,7 +5,7 @@
     src: url('fonts/raleway-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: auto
+    font-display: swap;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     src: url('fonts/Raleway.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: auto
+    font-display: swap;
 }
 
 #bloc_page {
