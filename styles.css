@@ -704,12 +704,13 @@ li:first-child {
         justify-content: space-evenly;
     }
     .filters span {
-        width: 100%;
+        /* width: 100%; */
         margin-left: 10px;
-        /* text-align: center; */
+        margin: auto;
     }
     .filters span:first-child {
         margin-bottom: 20px;
+        width: 100%;
     }
     #eco, #persons, #mood, #pet {
         width: 45%;
