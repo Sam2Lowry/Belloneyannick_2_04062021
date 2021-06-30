@@ -725,7 +725,7 @@ li:first-child {
   #pet {
     width: 45%;
     margin-bottom: 20px;
-    font-size: x-small;
+    font-size: small;
   }
   #eco,
   #persons {
