@@ -190,7 +190,7 @@ input.button {
 .format_form {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 75%;
 }
 .filters span {
   font-weight: 700;
@@ -725,6 +725,7 @@ li:first-child {
   #pet {
     width: 45%;
     margin-bottom: 20px;
+    font-size: x-small;
   }
   #eco,
   #persons {
