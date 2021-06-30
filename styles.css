@@ -566,6 +566,11 @@ li:first-child {
 
 /* ///////////Responsive/////////// */
 
+@media screen and (min-width: 1440px){
+  .filters span{
+    font-size:medium;
+  }
+}
 @media screen and (max-width: 1440px) {
   .card_2 .fig {
     width: 75%;
