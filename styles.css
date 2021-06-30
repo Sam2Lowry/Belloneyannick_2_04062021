@@ -1,3 +1,5 @@
+/* Charte couleur : bleu #0065FC Bleu clair : #DEEBFF Gris background : #F2F2F2 */
+
 @font-face {
   font-family: "raleway_italic";
   src: url("fonts/raleway-italic.ttf") format("truetype");
@@ -14,12 +16,22 @@
   font-display: swap;
 }
 
-* {
+#bloc_page {
   font-family: "raleway", Tahoma, sans-serif;
+  margin: 20px 20px 20px;
 }
 
-#bloc_page {
-  margin: 20px 20px 20px;
+.fig {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.fig .price {
+  font-weight: normal;
+}
+
+.filters select {
+  font-family: FontAwesome, "raleway", sans-serif;
 }
 
 a {
@@ -187,11 +199,12 @@ input.button {
 
 /* /////////////////Filtres////////////// */
 
-.format_form {
+form {
   display: flex;
   justify-content: flex-start;
   width: 50%;
 }
+
 .filters span {
   font-weight: 700;
   margin: auto;
@@ -370,15 +383,6 @@ h1 > span {
   font-weight: bold;
   margin: 0px 0px 0px 10px;
   height: auto;
-}
-
-.fig {
-  font-weight: bold;
-  font-size: medium;
-}
-
-.fig .price {
-  font-weight: normal;
 }
 
 /* Section  Les plus populaires */
