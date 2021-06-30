@@ -200,7 +200,7 @@ input.button {
 
 /* /////////////////Filtres////////////// */
 
-#filters_form {
+form {
   display: flex;
   justify-content: flex-start;
   width: 50%;
@@ -602,7 +602,7 @@ li:first-child {
   h1 {
     font-size: medium;
   }
-  .filters #filters_form {
+  .filters form {
     flex-wrap: wrap;
     width: 80%;
   }
