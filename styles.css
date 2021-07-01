@@ -53,6 +53,47 @@ picture:hover {
     opacity: 1;
   }
 }
+#area input:focus{
+  box-shadow: 0 0 2pt 1pt #0065fc;
+  outline: none;
+}
+
+.card:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 3pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.card_2:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 2pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.card_3:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 3pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.read_more:focus {
+  outline: none;
+  font-size: larger;
+  
+}
+.footer-list a:focus {
+  outline: none;
+  font-weight: bolder;
+}
 
 /* ==================
         Header
@@ -71,6 +112,7 @@ picture:hover {
   font-weight: bold;
   font-size: 1.2em;
   border-top: 3px solid #ffffff00;
+  outline: none;
 }
 
 #nav-links div {
@@ -84,7 +126,11 @@ picture:hover {
   color: #0065fc;
   font-weight: bold;
 }
-
+#nav-links a:focus {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  font-weight: bold;
+}
 .marqueur fa {
   color: #030303;
 }
@@ -211,12 +257,17 @@ input.button {
   height: 32px;
   opacity: 1;
   transition: ease-in;
+  outline: none;
 }
 
 #eco:hover,
 #persons:hover,
 #mood:hover,
-#pet:hover {
+#pet:hover,
+#eco:focus,
+#persons:focus,
+#mood:focus,
+#pet:focus {
   opacity: 0.5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -548,9 +599,9 @@ li:first-child {
         Responsive
    ================== */
 
-@media screen and (min-width: 1440px){
-  .filters span{
-    font-size:medium;
+@media screen and (min-width: 1440px) {
+  .filters span {
+    font-size: medium;
   }
 }
 @media screen and (max-width: 1440px) {
