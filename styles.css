@@ -26,11 +26,9 @@ a {
   color: #030303;
 }
 
-/* Hover image  */
-
-/* Hover image  */
-
-/* Hover image  */
+/* ==================
+          Hover
+   ================== */
 
 picture:hover {
   opacity: 1;
@@ -55,12 +53,51 @@ picture:hover {
     opacity: 1;
   }
 }
+#area input:focus{
+  box-shadow: 0 0 2pt 1pt #0065fc;
+  outline: none;
+}
 
-/* /////////////////Header/////////// */
+.card:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 3pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
 
-/* /////////////////Header/////////// */
+.card_2:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 2pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
 
-/* /////////////////Header/////////// */
+.card_3:focus {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  box-shadow: 0 0 3pt 2pt #0065fc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.read_more:focus {
+  outline: none;
+  font-size: larger;
+  
+}
+.footer-list a:focus {
+  outline: none;
+  font-weight: bolder;
+}
+
+/* ==================
+        Header
+   ================== */
 
 #nav-links {
   display: flex;
@@ -75,6 +112,7 @@ picture:hover {
   font-weight: bold;
   font-size: 1.2em;
   border-top: 3px solid #ffffff00;
+  outline: none;
 }
 
 #nav-links div {
@@ -88,7 +126,11 @@ picture:hover {
   color: #0065fc;
   font-weight: bold;
 }
-
+#nav-links a:focus {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  font-weight: bold;
+}
 .marqueur fa {
   color: #030303;
 }
@@ -105,9 +147,9 @@ p .fas {
   color: #0065fc;
 }
 
-/* ////////// Area bar //////////// */
-
-/* ////////// Area bar //////////// */
+/* ==================
+          Area bar
+   ================== */
 
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
@@ -181,11 +223,9 @@ input.button {
   height: auto;
 }
 
-/* /////////////////Filtres////////////// */
-
-/* /////////////////Filtres////////////// */
-
-/* /////////////////Filtres////////////// */
+/* ==================
+      Filtres
+   ================== */
 
 .format_form {
   display: flex;
@@ -217,12 +257,17 @@ input.button {
   height: 32px;
   opacity: 1;
   transition: ease-in;
+  outline: none;
 }
 
 #eco:hover,
 #persons:hover,
 #mood:hover,
-#pet:hover {
+#pet:hover,
+#eco:focus,
+#persons:focus,
+#mood:focus,
+#pet:focus {
   opacity: 0.5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -258,11 +303,9 @@ button span {
   color: #0065fc;
 }
 
-/* /////////// Body ///////////// */
-
-/* /////////// Body ///////////// */
-
-/* /////////// Body ///////////// */
+/* ==================
+        Body
+   ================== */
 
 section {
   display: flex;
@@ -291,11 +334,9 @@ h1 > span {
   font-size: smaller;
 }
 
-/* Section Hébergement à Marseille */
-
-/* Section Hébergement à Marseille */
-
-/* Section Hébergement à Marseille */
+/* ==================
+         Section hébergements à Marseille
+   ================== */
 
 #entitle {
   width: 100%;
@@ -381,11 +422,9 @@ h1 > span {
   font-weight: normal;
 }
 
-/* Section  Les plus populaires */
-
-/* Section  Les plus populaires */
-
-/* Section  Les plus populaires */
+/* ==================
+      Populaires
+   ================== */
 
 #title_pop {
   display: flex;
@@ -457,11 +496,9 @@ h1 > span {
   text-decoration: none;
 }
 
-/* Section  Activités à Marseille */
-
-/* Section  Activités à Marseille */
-
-/* Section  Activités à Marseille */
+/* ==================
+     Activités
+   ================== */
 
 Article:last-child {
   display: flex;
@@ -523,11 +560,9 @@ Article:last-child {
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.048);
 }
 
-/* Footer */
-
-/* Footer */
-
-/* Footer */
+/* ==================
+       Footer
+   ================== */
 
 .footer-list a {
   text-decoration: none;
@@ -560,15 +595,13 @@ li:first-child {
   margin-bottom: 40px;
 }
 
-/* ///////////Responsive/////////// */
+/* ==================
+        Responsive
+   ================== */
 
-/* ///////////Responsive/////////// */
-
-/* ///////////Responsive/////////// */
-
-@media screen and (min-width: 1440px){
-  .filters span{
-    font-size:medium;
+@media screen and (min-width: 1440px) {
+  .filters span {
+    font-size: medium;
   }
 }
 @media screen and (max-width: 1440px) {
