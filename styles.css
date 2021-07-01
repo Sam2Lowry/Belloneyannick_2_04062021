@@ -26,11 +26,9 @@ a {
   color: #030303;
 }
 
-/* Hover image  */
-
-/* Hover image  */
-
-/* Hover image  */
+/* ==================
+          Hover
+   ================== */
 
 picture:hover {
   opacity: 1;
@@ -56,11 +54,9 @@ picture:hover {
   }
 }
 
-/* /////////////////Header/////////// */
-
-/* /////////////////Header/////////// */
-
-/* /////////////////Header/////////// */
+/* ==================
+        Header
+   ================== */
 
 #nav-links {
   display: flex;
@@ -105,9 +101,9 @@ p .fas {
   color: #0065fc;
 }
 
-/* ////////// Area bar //////////// */
-
-/* ////////// Area bar //////////// */
+/* ==================
+          Area bar
+   ================== */
 
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
@@ -181,11 +177,9 @@ input.button {
   height: auto;
 }
 
-/* /////////////////Filtres////////////// */
-
-/* /////////////////Filtres////////////// */
-
-/* /////////////////Filtres////////////// */
+/* ==================
+      Filtres
+   ================== */
 
 .format_form {
   display: flex;
@@ -258,11 +252,9 @@ button span {
   color: #0065fc;
 }
 
-/* /////////// Body ///////////// */
-
-/* /////////// Body ///////////// */
-
-/* /////////// Body ///////////// */
+/* ==================
+        Body
+   ================== */
 
 section {
   display: flex;
@@ -291,11 +283,9 @@ h1 > span {
   font-size: smaller;
 }
 
-/* Section Hébergement à Marseille */
-
-/* Section Hébergement à Marseille */
-
-/* Section Hébergement à Marseille */
+/* ==================
+         Section hébergements à Marseille
+   ================== */
 
 #entitle {
   width: 100%;
@@ -381,11 +371,9 @@ h1 > span {
   font-weight: normal;
 }
 
-/* Section  Les plus populaires */
-
-/* Section  Les plus populaires */
-
-/* Section  Les plus populaires */
+/* ==================
+      Populaires
+   ================== */
 
 #title_pop {
   display: flex;
@@ -457,11 +445,9 @@ h1 > span {
   text-decoration: none;
 }
 
-/* Section  Activités à Marseille */
-
-/* Section  Activités à Marseille */
-
-/* Section  Activités à Marseille */
+/* ==================
+     Activités
+   ================== */
 
 Article:last-child {
   display: flex;
@@ -523,11 +509,9 @@ Article:last-child {
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.048);
 }
 
-/* Footer */
-
-/* Footer */
-
-/* Footer */
+/* ==================
+       Footer
+   ================== */
 
 .footer-list a {
   text-decoration: none;
@@ -560,11 +544,9 @@ li:first-child {
   margin-bottom: 40px;
 }
 
-/* ///////////Responsive/////////// */
-
-/* ///////////Responsive/////////// */
-
-/* ///////////Responsive/////////// */
+/* ==================
+        Responsive
+   ================== */
 
 @media screen and (min-width: 1440px){
   .filters span{
