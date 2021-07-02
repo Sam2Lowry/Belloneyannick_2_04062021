@@ -567,14 +567,13 @@ Article:last-child {
 #activity picture {
   height: 90%;
 }
-.card_3 .fig{
+.card_3 .fig {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
   height: 10%;
   margin-bottom: 0;
-  
 }
 .card_3:nth-of-type(1) {
   grid-area: port;
@@ -739,10 +738,7 @@ li:first-child {
     width: 70%;
     justify-content: space-between;
   }
-  #activity .fig {
-    font-size: small;
-    margin-bottom: 20px;
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -894,19 +890,29 @@ li:first-child {
   #title_pop .fa {
     margin-right: 0%;
   }
+
   #activity {
-    flex-wrap: wrap;
-  }
-  #activity picture {
-    height: 200px;
-  }
-  #activity .fig {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+
+    grid-template-areas:
+      "port"
+      "fort"
+      "frioul"
+      "parc"
+      "dame"
+      "longchamp";
   }
   .card_3 {
-    width: 33.333333%;
-    padding: 5px;
+    height: 25vh;
+  }
+
+  .card_3 .fig {
+    font-size: medium ;
+    line-height: 2vh;
+    
   }
   footer {
     text-align: center;
