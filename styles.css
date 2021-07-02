@@ -653,7 +653,7 @@ li:first-child {
   Article:first-child {
     display: flex;
     width: auto;
-    order : 2;
+    order: 2;
     max-width: 90vw;
   }
   Article:nth-of-type(2) {
@@ -707,18 +707,23 @@ li:first-child {
     order: 1;
     width: 50%;
   }
- .logo img {
-  margin: auto;
- }
+  .logo img {
+    margin: auto;
+  }
 
   #nav-links a {
     border-bottom: 3px solid #ffffff00;
     border-top: none;
     width: 50vh;
     text-align: center;
-    
   }
   #nav-links a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+    font-weight: bold;
+  }
+  #nav-links a:focus {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
@@ -818,6 +823,9 @@ li:first-child {
     width: auto;
   }
   .card {
+    width: 90%;
+  }
+  .card_2 {
     width: 90%;
   }
   #location {
