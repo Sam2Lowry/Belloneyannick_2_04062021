@@ -477,7 +477,7 @@ h1 > span {
 .card_2 {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 95%;
   border: 3px solid rgb(255, 255, 255);
   margin: 5px;
   margin-bottom: 20px;
@@ -489,7 +489,6 @@ h1 > span {
 
 .card_2 .fig {
   display: flex;
-  width: 60%;
   flex-direction: column;
   align-content: flex-end;
   line-height: 1.5rem;
@@ -505,7 +504,7 @@ h1 > span {
 #popular picture img {
   width: 100%;
   opacity: 1;
-  height: 16vh;
+  height: 15vh;
   object-fit: cover;
   border-radius: 5px 0px 0px 5px;
   transition: 0.3s ease-in-out;
