@@ -417,7 +417,7 @@ h1 > span {
 
 .fig {
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
 }
 
 .fig .price {
@@ -454,7 +454,6 @@ h1 > span {
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f2;
-  text-align: center;
   padding: 10px 10px 10px;
 }
 
@@ -473,13 +472,15 @@ h1 > span {
 
 .card_2 .fig {
   display: flex;
-  width: 100%;
+  width: 60%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 150%;
+  align-content: flex-end;
+  line-height: 1.5rem;
 }
-
+.card_2 .rating {
+  margin-top: auto;
+  font-size: small;
+}
 #popular picture img {
   width: 100%;
   opacity: 1;
