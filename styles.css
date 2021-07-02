@@ -17,9 +17,12 @@
 * {
   font-family: "raleway", Tahoma, sans-serif;
 }
-
+body {
+  margin: 1rem;
+}
 #bloc_page {
-  margin: 20px 20px 20px;
+  margin: 0rem auto;
+  max-width: 85rem;
 }
 
 a {
@@ -53,7 +56,7 @@ picture:hover {
     opacity: 1;
   }
 }
-#area input:focus{
+#area input:focus {
   box-shadow: 0 0 2pt 1pt #0065fc;
   outline: none;
 }
@@ -88,7 +91,6 @@ picture:hover {
 .read_more:focus {
   outline: none;
   font-size: larger;
-  
 }
 .footer-list a:focus {
   outline: none;
@@ -103,16 +105,30 @@ picture:hover {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
 }
 
 #nav-links a {
-  flex: 1;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   border-top: 3px solid #ffffff00;
   outline: none;
+}
+.logo {
+  width: 48vw;
+  max-width: 60rem;
+}
+
+#loc_nav a,
+#act_nav a,
+#register a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15vh;
+  text-align: center;
+  height: 4rem;
 }
 
 #nav-links div {
@@ -133,10 +149,6 @@ picture:hover {
 }
 .marqueur fa {
   color: #030303;
-}
-
-.logo {
-  width: 50%;
 }
 
 #register a {
@@ -222,11 +234,15 @@ input.button {
   font-size: small;
   height: auto;
 }
-
+#area p {
+  margin-bottom: 20px;
+}
 /* ==================
       Filtres
    ================== */
-
+.filters {
+  margin-bottom: 20px;
+}
 .format_form {
   display: flex;
   justify-content: flex-start;
@@ -235,6 +251,7 @@ input.button {
 .filters span {
   font-weight: 700;
   margin: auto;
+  margin-left: 0px;
 }
 
 .filters i {
@@ -332,6 +349,7 @@ h1 {
 
 h1 > span {
   font-size: smaller;
+  font-weight: normal;
 }
 
 /* ==================
@@ -430,17 +448,15 @@ h1 > span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   align-items: baseline;
 }
 
 #title_pop .fa {
   font-size: larger;
-  margin-right: 10%;
 }
 
 #title_pop h2 {
-  margin-left: 30px;
   margin-bottom: 35px;
 }
 
@@ -452,14 +468,13 @@ h1 > span {
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f2;
-  text-align: center;
   padding: 10px 10px 10px;
 }
 
 .card_2 {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   border: 3px solid rgb(255, 255, 255);
   margin: 5px;
   margin-bottom: 20px;
@@ -471,17 +486,22 @@ h1 > span {
 
 .card_2 .fig {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 150%;
+  align-content: flex-end;
+  line-height: 1.5rem;
+  padding: 0.5rem;
 }
-
+.card_2 .price {
+  font-size: smaller;
+}
+.card_2 .rating {
+  margin-top: auto;
+  font-size: small;
+}
 #popular picture img {
   width: 100%;
   opacity: 1;
-  height: 16vh;
+  height: 15vh;
   object-fit: cover;
   border-radius: 5px 0px 0px 5px;
   transition: 0.3s ease-in-out;
@@ -505,13 +525,13 @@ Article:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 #title_act {
-  text-align: center;
   width: 100%;
   margin-bottom: 20px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 #activity a {
@@ -519,45 +539,59 @@ Article:last-child {
 }
 
 #activity {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 90%;
-  margin-bottom: 40px;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20vh 20vh;
+  gap: 30px;
 
-#activity picture {
-  height: 350px;
+  grid-template-areas:
+    "port fort parc dame"
+    "port frioul parc longchamp";
+}
+.card_3 {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
+  border: 2px solid #f2f2f2;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.048);
+  border-radius: 5% 5% 5% 5%;
 }
 
 #activity picture img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
   object-fit: cover;
-  opacity: 1;
+  border-radius: 5% 5% 0% 0%;
 }
-
-#activity .fig {
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  margin: auto;
-  padding: 5px 0px 5px 0px;
+#activity picture {
+  height: 90%;
 }
-
-.card_3 {
+.card_3 .fig {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  width: 15%;
-  margin-bottom: 20px;
-  border: 1px solid #f2f2f2;
-  border-radius: 5px;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.048);
+  justify-content: center;
+  margin-left: 1rem;
+  height: 10%;
+  margin-bottom: 0;
+}
+.card_3:nth-of-type(1) {
+  grid-area: port;
+}
+.card_3:nth-of-type(2) {
+  grid-area: fort;
+}
+.card_3:nth-of-type(3) {
+  grid-area: frioul;
+}
+.card_3:nth-of-type(4) {
+  grid-area: parc;
+}
+.card_3:nth-of-type(5) {
+  grid-area: dame;
+}
+.card_3:nth-of-type(6) {
+  grid-area: longchamp;
 }
 
 /* ==================
@@ -583,6 +617,7 @@ footer {
   background-color: #f2f2f2;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 footer > div {
@@ -630,7 +665,18 @@ li:first-child {
     flex: 1;
   }
 }
+@media screen and (max-width: 1185px) {
+  .logo {
+    width: 30vw;
+    max-width: 60rem;
+  }
 
+  #loc_nav a,
+  #act_nav a,
+  #register a {
+    width: 16vh;
+  }
+}
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: medium;
@@ -651,12 +697,19 @@ li:first-child {
   Article:first-child {
     display: flex;
     width: auto;
+    order: 2;
+    max-width: 90vw;
   }
   Article:nth-of-type(2) {
     width: auto;
+    order: 1;
+    max-width: 90vw;
+    margin-bottom: 1rem;
   }
   Article:last-child {
     width: auto;
+    order: 3;
+    max-width: 90vw;
   }
   .card {
     width: 30vh;
@@ -685,13 +738,12 @@ li:first-child {
     width: 70%;
     justify-content: space-between;
   }
-  #activity .fig {
-    font-size: small;
-    margin-bottom: 20px;
-  }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
   .logo {
     order: 1;
     width: 50%;
@@ -699,11 +751,20 @@ li:first-child {
   .logo img {
     margin: auto;
   }
+
   #nav-links a {
     border-bottom: 3px solid #ffffff00;
     border-top: none;
+    width: 50vh;
+    text-align: center;
   }
   #nav-links a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+    font-weight: bold;
+  }
+  #nav-links a:focus {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
@@ -717,19 +778,22 @@ li:first-child {
   #nav-links div:last-child {
     order: 2;
     width: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   #nav-links div:nth-of-type(2) {
     order: 3;
     display: flex;
     width: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid #deebff;
   }
   #nav-links div:nth-of-type(3) {
     order: 4;
     width: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid #deebff;
   }
   h1 {
@@ -802,6 +866,9 @@ li:first-child {
   .card {
     width: 90%;
   }
+  .card_2 {
+    width: 90%;
+  }
   #location {
     flex-direction: column;
     align-items: center;
@@ -822,19 +889,31 @@ li:first-child {
   #title_pop .fa {
     margin-right: 0%;
   }
+
   #activity {
-    flex-wrap: wrap;
-  }
-  #activity picture {
-    height: 200px;
-  }
-  #activity .fig {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+
+    grid-template-areas:
+      "port"
+      "fort"
+      "frioul"
+      "parc"
+      "dame"
+      "longchamp";
   }
   .card_3 {
-    width: 33.333333%;
-    padding: 5px;
+    height: 25vh;
+  }
+  #activity picture {
+    height: 80%;
+  }
+  .card_3 .fig {
+    margin: auto;
+    font-size: medium;
+    line-height: 2vh;
   }
   footer {
     text-align: center;

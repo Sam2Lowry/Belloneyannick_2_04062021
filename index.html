@@ -27,69 +27,76 @@
             <div class="logo">
               <img src="img/logo/Reservia.svg" alt="reservia logo" />
             </div>
-            <div><a href="#location">Hébergement</a></div>
-            <div><a href="#activity">Activités</a></div>
+            <div id="loc_nav"><a href="#location">Hébergement</a></div>
+            <div id="act_nav"><a href="#activity">Activités</a></div>
             <div id="register"><a href="#">S'inscrire</a></div>
           </div>
         </nav>
-        <h1>
-          Trouvez votre hébergement pour des vacances de rêves <br />
-          <span> En plein centre ville ou en pleine nature</span>
-        </h1>
-        <div id="area">
-          <div id="area_bar">
-            <span class="marqueur"><i class="fa fa-map-marker"></i></span>
-            <form class="format_form" method="POST" action="#">
-              <input
-                type="text"
-                placeholder="Où allez vous ?"
-                value="Marseille, France"
-                required
-                pattern="[a-z]{4,20}"
-              />
-              <input type="submit" class="butt_where" value="Rechercher" />
-            </form>
-          </div>
-          <div id="area_resize">
-            <span class="marqueur"><i class="fa fa-map-marker"></i></span>
-            <form class="format_form" method="POST" action="#">
-              <input
-                type="text"
-                placeholder="Où allez vous ?"
-                value="Marseille, France"
-                required
-                pattern="[a-z]{4,20}"
-              />
-              <input type="submit" class="butt_where" value="&#xf002;" />
-            </form>
-          </div>
-          <div class="filters">
-            <form class="format_form" action="#">
-              <span>Filtres</span>
-              <button type="button" id="eco" name="eco">
-                <i class="fas fa-money-bill-wave"></i>
-                <span>Économique</span>
-              </button>
-              <button type="button" id="persons" name="persons">
-                <i class="fas fa-child"></i>
-                <span>Familial</span>
-              </button>
-              <button type="button" id="mood" name="mood">
-                <i class="fas fa-heart"></i>
-                <span>Romantique</span>
-              </button>
-              <button type="button" id="pet" name="pet">
-                <i class="fas fa-dog"></i>
-                <span>Animaux autorisés</span>
-              </button>
-            </form>
-          </div>
-          <p>
-            <i class="fas fa-info-circle"></i> Plus de 500 logements sont
-            disponibles dans cette ville
-          </p>
-        </div>
       </header>
+
+      <h1>
+        Trouvez votre hébergement pour des vacances de rêves <br />
+        <span> En plein centre ville ou en pleine nature</span>
+      </h1>
+      <div id="area">
+        <div id="area_bar">
+          <span class="marqueur"><i class="fa fa-map-marker"></i></span>
+          <form class="format_form" method="POST" action="#">
+            <input
+              type="text"
+              placeholder="Où allez vous ?"
+              value="Marseille, France"
+              required
+              pattern="[a-z]{4,20}"
+            />
+            <input type="submit" class="butt_where" value="Rechercher" />
+          </form>
+        </div>
+        <div id="area_resize">
+          <span class="marqueur"><i class="fa fa-map-marker"></i></span>
+          <form class="format_form" method="POST" action="#">
+            <input
+              type="text"
+              placeholder="Où allez vous ?"
+              value="Marseille, France"
+              required
+              pattern="[a-z]{4,20}"
+            />
+            <input
+              type="submit"
+              arialabel="Rechercher"
+              class="butt_where"
+              value="&#xf002;"
+            />
+          </form>
+        </div>
+        <div class="filters">
+          <form class="format_form" action="#">
+            <span>Filtres</span>
+            <button type="button" id="eco" name="eco">
+              <i class="fas fa-money-bill-wave"></i>
+              <span>Économique</span>
+            </button>
+            <button type="button" id="persons" name="persons">
+              <i class="fas fa-child"></i>
+              <span>Familial</span>
+            </button>
+            <button type="button" id="mood" name="mood">
+              <i class="fas fa-heart"></i>
+              <span>Romantique</span>
+            </button>
+            <button type="button" id="pet" name="pet">
+              <i class="fas fa-dog"></i>
+              <span>Animaux autorisés</span>
+            </button>
+          </form>
+        </div>
+        <p>
+          <i class="fas fa-info-circle"></i> Plus de 500 logements sont
+          disponibles dans cette ville
+        </p>
+      </div>
+
       <section>
         <article>
           <div id="location">
