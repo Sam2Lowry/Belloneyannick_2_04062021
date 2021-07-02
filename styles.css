@@ -647,7 +647,18 @@ li:first-child {
     flex: 1;
   }
 }
+@media screen and (max-width: 1120px) {
+  .logo {
+    width: 45vw;
+    max-width: 60rem;
+  }
 
+  #loc_nav a,
+  #act_nav a,
+  #register a {
+    width: 10vh;
+  }
+}
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: medium;
