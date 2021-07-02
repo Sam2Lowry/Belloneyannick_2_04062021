@@ -738,6 +738,9 @@ li:first-child {
     width: 70%;
     justify-content: space-between;
   }
+  .card_3 .fig{
+    font-size: small;
+  }
 }
 
 @media screen and (max-width: 768px) {
