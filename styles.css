@@ -876,20 +876,22 @@ li:first-child {
     margin: auto;
     margin-bottom: 15px;
   }
-  #location h2 {
-    text-align: center;
-  }
+  /* #location h2 {
+    text-align: center; 
+  }*/
   .read_more {
     margin-bottom: 5px;
     margin-left: 0;
   }
-  #title_pop {
+  /* #title_pop {
     justify-content: space-evenly;
-  }
+  } */
   #title_pop .fa {
     margin-right: 0%;
   }
-
+#title_act{
+  margin-left : 10%;
+}
   #activity {
     display: grid;
     grid-template-columns: 1fr;
