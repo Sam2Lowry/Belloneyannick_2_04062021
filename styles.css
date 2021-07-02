@@ -234,14 +234,13 @@ input.button {
   font-size: small;
   height: auto;
 }
-#area p{
-  
+#area p {
   margin-bottom: 20px;
 }
 /* ==================
       Filtres
    ================== */
-.filters{
+.filters {
   margin-bottom: 20px;
 }
 .format_form {
@@ -531,7 +530,6 @@ Article:last-child {
 }
 
 #title_act {
-  text-align: center;
   width: 100%;
   margin-bottom: 20px;
   margin-top: 25px;
@@ -692,6 +690,7 @@ li:first-child {
     width: auto;
     order: 1;
     max-width: 90vw;
+    margin-bottom: 1rem;
   }
   Article:last-child {
     width: auto;
