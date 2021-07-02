@@ -115,6 +115,21 @@ picture:hover {
   border-top: 3px solid #ffffff00;
   outline: none;
 }
+.logo {
+  width: 60%;
+  max-width: 60rem;
+}
+
+#loc_nav a,
+#act_nav a,
+#register a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15vh;
+  text-align: center;
+  height: 4rem;
+}
 
 #nav-links div {
   display: flex;
@@ -134,11 +149,6 @@ picture:hover {
 }
 .marqueur fa {
   color: #030303;
-}
-
-.logo {
-  width: 60vw;
-  max-width: 60rem;
 }
 
 #register a {
@@ -417,7 +427,7 @@ h1 > span {
 
 .fig {
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
 }
 
 .fig .price {
@@ -476,6 +486,10 @@ h1 > span {
   flex-direction: column;
   align-content: flex-end;
   line-height: 1.5rem;
+  padding: 0.5rem;
+}
+.card_2 .price {
+  font-size: smaller;
 }
 .card_2 .rating {
   margin-top: auto;
