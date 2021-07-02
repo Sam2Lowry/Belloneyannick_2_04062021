@@ -565,14 +565,14 @@ Article:last-child {
   border-radius: 5% 5% 0% 0%;
 }
 #activity picture {
-  height: 90%;
+  height: 85%;
 }
 .card_3 .fig {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
-  height: 10%;
+  height: 15%;
   margin-bottom: 0;
 }
 .card_3:nth-of-type(1) {
