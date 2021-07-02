@@ -738,7 +738,6 @@ li:first-child {
     width: 70%;
     justify-content: space-between;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -908,11 +907,13 @@ li:first-child {
   .card_3 {
     height: 25vh;
   }
-
+  #activity picture {
+    height: 80%;
+  }
   .card_3 .fig {
-    font-size: medium ;
+    margin: auto;
+    font-size: medium;
     line-height: 2vh;
-    
   }
   footer {
     text-align: center;
