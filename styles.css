@@ -525,7 +525,7 @@ Article:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10vh;
 }
 
 #title_act {
@@ -537,11 +537,12 @@ Article:last-child {
 #activity a {
   text-decoration: none;
 }
+
 #activity {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh;
-  gap: 20px;
+  grid-template-rows: 20vh 20vh;
+  gap: 30px;
   grid-template-areas:
     "port fort parc dame"
     "port frioul parc longchamp";
@@ -565,29 +566,16 @@ Article:last-child {
   grid-area: longchamp;
 }
 
-#activity img{
-width: 100%;
-height: 90%;
-object-fit: cover;
-border-radius: 10% 10% 5% 5%;
+
+#activity img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10% 10% 5% 5%;
 }
 
-#activity .fig{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 1rem;
-  
-  
-  
-}
-.card_3{
- text-align: center;
-  border: solid 1px #f2f2f2;
-  border-radius: 10%;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
-}
+
+ 
 
 /* ==================
        Footer
