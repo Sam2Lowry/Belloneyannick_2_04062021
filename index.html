@@ -23,15 +23,17 @@
     <div id="bloc_page">
       <header>
         <nav class="navbar">
-          <div id="nav-links">
-            <div class="logo">
-              <img src="img/logo/Reservia.svg" alt="reservia logo" />
-            </div>
-            <div><a href="#location">Hébergement</a></div>
-            <div><a href="#activity">Activités</a></div>
-            <div id="register"><a href="#">S'inscrire</a></div>
+            <div id="nav-links">
+              <div class="logo">
+                <img src="img/logo/Reservia.svg" alt="reservia logo" />
+              </div>
+              <div id="loc_nav"><a href="#location">Hébergement</a></div>
+              <div id="act_nav"><a href="#activity">Activités</a></div>
+              <div id="register"><a href="#">S'inscrire</a></div>
           </div>
         </nav>
+      </header>
+      
         <h1>
           Trouvez votre hébergement pour des vacances de rêves <br />
           <span> En plein centre ville ou en pleine nature</span>
@@ -60,7 +62,12 @@
                 required
                 pattern="[a-z]{4,20}"
               />
-              <input type="submit" arialabel="Rechercher" class="butt_where" value="&#xf002;" />
+              <input
+                type="submit"
+                arialabel="Rechercher"
+                class="butt_where"
+                value="&#xf002;"
+              />
             </form>
           </div>
           <div class="filters">
@@ -89,7 +96,7 @@
             disponibles dans cette ville
           </p>
         </div>
-      </header>
+      
       <section>
         <article>
           <div id="location">
