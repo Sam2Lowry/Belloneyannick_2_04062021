@@ -17,9 +17,12 @@
 * {
   font-family: "raleway", Tahoma, sans-serif;
 }
-
+body{
+  margin: 0rem;
+}
 #bloc_page {
-  margin: 20px 20px 20px;
+  margin: 0rem auto;
+  max-width: 85rem;
 }
 
 a {
