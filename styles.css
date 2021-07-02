@@ -654,17 +654,17 @@ li:first-child {
     display: flex;
     width: auto;
     order : 2;
-    max-width: 40rem;
+    max-width: 90vw;
   }
   Article:nth-of-type(2) {
     width: auto;
     order: 1;
-    max-width: 40rem;
+    max-width: 90vw;
   }
   Article:last-child {
     width: auto;
     order: 3;
-    max-width: 40rem;
+    max-width: 90vw;
   }
   .card {
     width: 30vh;
@@ -714,12 +714,13 @@ li:first-child {
   #nav-links a {
     border-bottom: 3px solid #ffffff00;
     border-top: none;
+    width: 50vh;
+    text-align: center;
     
   }
   #nav-links a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
-    border-bottom-width: 0.3rem;
     color: #0065fc;
     font-weight: bold;
   }
