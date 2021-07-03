@@ -163,10 +163,13 @@ p .fas {
           Area bar
    ================== */
 
+.butt {
+  font-family: FontAwesome, "ralewaythin", sans-serif;
+}
+
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
-  width:40px;
-  
+  min-width: 40px;
 }
 
 #area_resize {
@@ -257,11 +260,12 @@ input.button {
   display: flex;
   justify-content: flex-start;
   width: 75%;
+  
 }
 .filters span {
   font-weight: 700;
   margin: auto;
-  margin-left: 0px;
+ 
 }
 
 .filters i {
