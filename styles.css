@@ -179,7 +179,7 @@ p .fas {
 
 .marqueur {
   display: flex;
-  width: 20px;
+  width: 40px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -194,11 +194,14 @@ p .fas {
   border-radius: 15px;
   width: max-content;
 }
+#area_bar input[type="text"] {
+  width: 15vw;
+}
 
 #area_bar input,
 input.button {
   height: 40px;
-  
+
   color: #030303;
   text-decoration: none;
   border: none;
@@ -231,7 +234,7 @@ input.button {
   border: none;
   text-align: center;
 }
-#area_resize input[type="text"]{
+#area_resize input[type="text"] {
   width: 80vw;
 }
 
@@ -248,8 +251,9 @@ input.button {
 }
 .format_form_city {
   display: flex;
-  justify-content: flex-start;}
-  
+  justify-content: flex-start;
+}
+
 /* ==================
       Filtres
    ================== */
@@ -260,12 +264,10 @@ input.button {
   display: flex;
   justify-content: flex-start;
   width: 75%;
-  
 }
 .filters span {
   font-weight: 700;
   margin: auto;
- 
 }
 
 .filters i {
