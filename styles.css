@@ -163,18 +163,22 @@ p .fas {
           Area bar
    ================== */
 
-.butt_where {
+.butt {
   font-family: FontAwesome, "ralewaythin", sans-serif;
 }
 
-#area_resize {
-  visibility: hidden;
-  height: 0;
+.butt_where {
+  font-family: FontAwesome, "ralewaythin", sans-serif;
+  min-width: 50px;
+  
 }
-
+.format_form_city {
+  display: flex;
+  justify-content: flex-start;
+}
 .marqueur {
   display: flex;
-  width: 20px;
+  width: 40px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -182,48 +186,62 @@ p .fas {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
 }
-
+#area_bar input value{
+  color : red;
+}
 #area_bar {
   display: flex;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
   width: max-content;
 }
+#area_bar input[type="text"] {
+  width: 15vw;
+  min-width: 140px;
+}
+
 
 #area_bar input,
 input.button {
-  height: 30px;
+  height: 40px;
   color: #030303;
   text-decoration: none;
   border: none;
-  text-align: center;
+  margin-left: 10px ;
+  font-size: medium;
+  font-weight: bold;
 }
-
 #area_bar input[type="submit"] {
   background-color: #0065fc;
   color: white;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
-  font-size: small;
+  font-size: medium;
   height: auto;
 }
-
+#area_resize {
+  visibility: hidden;
+  height: 0;
+}
 #area_resize {
   display: flex;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
-  width: max-content;
   margin-bottom: 20px;
   box-shadow: inset 5px 5px 5px 5px #f2f2f2;
 }
-
 #area_resize input,
 input.button {
-  height: 30px;
+  height: 40px;
   color: #030303;
   text-decoration: none;
   border: none;
-  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+#area_resize input[type="text"] {
+  width: 70vw;
+  max-width: 400px;
 }
 
 #area_resize input[type="submit"] {
@@ -231,12 +249,13 @@ input.button {
   color: white;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
-  font-size: small;
+  font-size: medium;
   height: auto;
 }
 #area p {
   margin-bottom: 20px;
 }
+
 /* ==================
       Filtres
    ================== */
@@ -251,7 +270,6 @@ input.button {
 .filters span {
   font-weight: 700;
   margin: auto;
-  margin-left: 0px;
 }
 
 .filters i {
@@ -738,7 +756,7 @@ li:first-child {
     width: 70%;
     justify-content: space-between;
   }
-  .card_3 .fig{
+  .card_3 .fig {
     font-size: small;
   }
 }
@@ -829,7 +847,7 @@ li:first-child {
   #mood,
   #pet {
     width: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: small;
   }
   #eco,
@@ -858,13 +876,13 @@ li:first-child {
   }
   Article:first-child {
     display: flex;
-    width: auto;
+    width: 90%;
   }
   Article:nth-of-type(2) {
-    width: auto;
+    width: 90%;
   }
   Article:last-child {
-    width: auto;
+    width: 90%;
   }
   .card {
     width: 90%;
@@ -892,9 +910,9 @@ li:first-child {
   #title_pop .fa {
     margin-right: 0%;
   }
-#title_act{
-  margin-left : 10%;
-}
+  #title_act {
+    margin-left: 10%;
+  }
   #activity {
     display: grid;
     grid-template-columns: 1fr;
@@ -911,6 +929,7 @@ li:first-child {
   }
   .card_3 {
     height: 25vh;
+   
   }
   #activity picture {
     height: 80%;
