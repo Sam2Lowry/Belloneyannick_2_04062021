@@ -876,13 +876,13 @@ li:first-child {
   }
   Article:first-child {
     display: flex;
-    width: auto;
+    width: 90%;
   }
   Article:nth-of-type(2) {
-    width: auto;
+    width: 90%;
   }
   Article:last-child {
-    width: auto;
+    width: 90%;
   }
   .card {
     width: 90%;
@@ -929,6 +929,7 @@ li:first-child {
   }
   .card_3 {
     height: 25vh;
+   
   }
   #activity picture {
     height: 80%;
