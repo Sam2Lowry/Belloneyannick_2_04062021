@@ -185,9 +185,6 @@ p .fas {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
 }
-#area_bar input value {
-  color: red;
-}
 #area_bar {
   display: flex;
   border: 1px solid #f2f2f2;
@@ -216,6 +213,7 @@ input.button {
   cursor: pointer;
   font-size: medium;
   height: auto;
+  font-weight: normal;
 }
 #area_resize {
   visibility: hidden;
@@ -251,7 +249,8 @@ input.button {
   height: auto;
 }
 #area p {
-  margin-bottom: 20px;
+  margin: 0rem 0rem 1rem 1rem
+
 }
 
 /* ==================
@@ -443,7 +442,7 @@ h1 > span {
 .read_more {
   width: 100%;
   font-weight: bold;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
   height: auto;
 }
 
@@ -473,7 +472,7 @@ h1 > span {
 }
 
 #title_pop h2 {
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
 #popular {
@@ -541,7 +540,7 @@ Article:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 #title_act {
@@ -623,7 +622,6 @@ ul {
 
 li {
   margin: 10px 0;
-  /* font-weight: bold; */
   font-size: medium;
 }
 
@@ -642,9 +640,11 @@ footer > div {
 li:first-child {
   font-size: large;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
-
+li:last-child{
+  margin-bottom: 1.5rem;
+}
 /* ==================
         Responsive
    ================== */
