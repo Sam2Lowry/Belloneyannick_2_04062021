@@ -83,7 +83,7 @@ picture:hover {
   opacity: 1;
   -webkit-animation: flash 1.5s;
   animation: flash 1.5s;
-  box-shadow:  0  0 4pt 2pt #0065fc;
+  box-shadow: 0 0 4pt 2pt #0065fc;
   border-radius: 5%;
   outline: none;
 }
@@ -249,8 +249,7 @@ input.button {
   height: auto;
 }
 #area p {
-  margin: 0rem 0rem 1rem 1rem
-
+  margin: 0rem 0rem 1rem 1rem;
 }
 
 /* ==================
@@ -642,7 +641,7 @@ li:first-child {
   font-weight: bold;
   margin-bottom: 1rem;
 }
-li:last-child{
+li:last-child {
   margin-bottom: 1.5rem;
 }
 /* ==================
@@ -694,7 +693,7 @@ li:last-child{
 }
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: medium;
+    font-size: Large;
   }
   .filters form {
     flex-wrap: wrap;
@@ -815,7 +814,7 @@ li:last-child{
     border-bottom: 1px solid #deebff;
   }
   h1 {
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
   }
   h1 span {
@@ -831,11 +830,12 @@ li:last-child{
     justify-content: space-evenly;
   }
   .filters span {
-    margin-left: 10px;
+    margin-left: 1rem;
     margin: auto;
   }
   .filters span:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
     width: 100%;
   }
   #eco,
@@ -845,10 +845,6 @@ li:last-child{
     width: 45%;
     margin-bottom: 10px;
     font-size: small;
-  }
-  #eco,
-  #persons {
-    margin-bottom: 10px;
   }
   form {
     width: auto;
@@ -892,17 +888,12 @@ li:last-child{
     width: 100%;
     margin: auto;
     margin-bottom: 15px;
+    background-color: #f2f2f200;
   }
-  /* #location h2 {
-    text-align: center; 
-  }*/
   .read_more {
     margin-bottom: 5px;
     margin-left: 0;
   }
-  /* #title_pop {
-    justify-content: space-evenly;
-  } */
   #title_pop .fa {
     margin-right: 0%;
   }
