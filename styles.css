@@ -169,14 +169,13 @@ p .fas {
 
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
-  min-width: 40px;
+  min-width: 50px;
+  
 }
-
-#area_resize {
-  visibility: hidden;
-  height: 0;
+.format_form_city {
+  display: flex;
+  justify-content: flex-start;
 }
-
 .marqueur {
   display: flex;
   width: 40px;
@@ -187,7 +186,9 @@ p .fas {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
 }
-
+#area_bar input value{
+  color : red;
+}
 #area_bar {
   display: flex;
   border: 1px solid #f2f2f2;
@@ -196,28 +197,32 @@ p .fas {
 }
 #area_bar input[type="text"] {
   width: 15vw;
+  min-width: 140px;
 }
+
 
 #area_bar input,
 input.button {
   height: 40px;
-
   color: #030303;
   text-decoration: none;
   border: none;
-  text-align: center;
+  margin-left: 10px ;
+  font-size: medium;
+  font-weight: bold;
 }
-
 #area_bar input[type="submit"] {
   background-color: #0065fc;
   color: white;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
-
-  font-size: small;
+  font-size: medium;
   height: auto;
 }
-
+#area_resize {
+  visibility: hidden;
+  height: 0;
+}
 #area_resize {
   display: flex;
   border: 1px solid #f2f2f2;
@@ -225,17 +230,18 @@ input.button {
   margin-bottom: 20px;
   box-shadow: inset 5px 5px 5px 5px #f2f2f2;
 }
-
 #area_resize input,
 input.button {
   height: 40px;
   color: #030303;
   text-decoration: none;
   border: none;
-  text-align: center;
+  font-size: medium;
+  font-weight: bold;
 }
 #area_resize input[type="text"] {
-  width: 80vw;
+  width: 70vw;
+  max-width: 400px;
 }
 
 #area_resize input[type="submit"] {
@@ -243,15 +249,11 @@ input.button {
   color: white;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
-  font-size: small;
+  font-size: medium;
   height: auto;
 }
 #area p {
   margin-bottom: 20px;
-}
-.format_form_city {
-  display: flex;
-  justify-content: flex-start;
 }
 
 /* ==================
@@ -845,7 +847,7 @@ li:first-child {
   #mood,
   #pet {
     width: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: small;
   }
   #eco,
