@@ -83,8 +83,8 @@ picture:hover {
   opacity: 1;
   -webkit-animation: flash 1.5s;
   animation: flash 1.5s;
-  box-shadow: 0 0 3pt 2pt #0065fc;
-  border-radius: 10px;
+  box-shadow: 0 0 4pt 2pt #0065fc;
+  border-radius: 5%;
   outline: none;
 }
 
@@ -170,7 +170,6 @@ p .fas {
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
   min-width: 50px;
-  
 }
 .format_form_city {
   display: flex;
@@ -186,9 +185,6 @@ p .fas {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
 }
-#area_bar input value{
-  color : red;
-}
 #area_bar {
   display: flex;
   border: 1px solid #f2f2f2;
@@ -200,14 +196,13 @@ p .fas {
   min-width: 140px;
 }
 
-
 #area_bar input,
 input.button {
   height: 40px;
   color: #030303;
   text-decoration: none;
   border: none;
-  margin-left: 10px ;
+  margin-left: 10px;
   font-size: medium;
   font-weight: bold;
 }
@@ -218,6 +213,7 @@ input.button {
   cursor: pointer;
   font-size: medium;
   height: auto;
+  font-weight: normal;
 }
 #area_resize {
   visibility: hidden;
@@ -253,7 +249,7 @@ input.button {
   height: auto;
 }
 #area p {
-  margin-bottom: 20px;
+  margin: 0rem 0rem 1rem 1rem;
 }
 
 /* ==================
@@ -335,6 +331,9 @@ button span {
 }
 
 .filters button .fas {
+  color: #0065fc;
+}
+#info_light {
   color: #0065fc;
 }
 
@@ -445,7 +444,7 @@ h1 > span {
 .read_more {
   width: 100%;
   font-weight: bold;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
   height: auto;
 }
 
@@ -475,7 +474,7 @@ h1 > span {
 }
 
 #title_pop h2 {
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
 #popular {
@@ -527,7 +526,7 @@ h1 > span {
 
 #popular picture {
   width: 50%;
-  border-radius: 5px;
+  border-radius: 5%;
 }
 
 #popular a {
@@ -543,7 +542,7 @@ Article:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 #title_act {
@@ -571,8 +570,7 @@ Article:last-child {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 2px solid #f2f2f2;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.048);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.137);
   border-radius: 5% 5% 5% 5%;
 }
 
@@ -626,7 +624,6 @@ ul {
 
 li {
   margin: 10px 0;
-  /* font-weight: bold; */
   font-size: medium;
 }
 
@@ -645,9 +642,11 @@ footer > div {
 li:first-child {
   font-size: large;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
-
+li:last-child {
+  margin-bottom: 1.5rem;
+}
 /* ==================
         Responsive
    ================== */
@@ -697,7 +696,7 @@ li:first-child {
 }
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: medium;
+    font-size: Large;
   }
   .filters form {
     flex-wrap: wrap;
@@ -818,7 +817,7 @@ li:first-child {
     border-bottom: 1px solid #deebff;
   }
   h1 {
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
   }
   h1 span {
@@ -834,12 +833,12 @@ li:first-child {
     justify-content: space-evenly;
   }
   .filters span {
-    /* width: 100%; */
-    margin-left: 10px;
+    margin-left: 1rem;
     margin: auto;
   }
   .filters span:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
     width: 100%;
   }
   #eco,
@@ -849,10 +848,6 @@ li:first-child {
     width: 45%;
     margin-bottom: 10px;
     font-size: small;
-  }
-  #eco,
-  #persons {
-    margin-bottom: 10px;
   }
   form {
     width: auto;
@@ -896,17 +891,12 @@ li:first-child {
     width: 100%;
     margin: auto;
     margin-bottom: 15px;
+    background-color: #f2f2f200;
   }
-  /* #location h2 {
-    text-align: center; 
-  }*/
   .read_more {
     margin-bottom: 5px;
     margin-left: 0;
   }
-  /* #title_pop {
-    justify-content: space-evenly;
-  } */
   #title_pop .fa {
     margin-right: 0%;
   }
@@ -929,7 +919,6 @@ li:first-child {
   }
   .card_3 {
     height: 25vh;
-   
   }
   #activity picture {
     height: 80%;
