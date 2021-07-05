@@ -132,12 +132,16 @@ picture:hover {
   flex-direction: row;
   align-items: center;
 }
-#nav-links a:hover {
+#loc_nav a:hover,
+#act_nav a:hover,
+#register a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
 }
-#nav-links a:focus {
+#loc_nav a:focus,
+#act_nav a:focus,
+#register a:focus {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
@@ -723,13 +727,17 @@ li:last-child {
     width: 50vh;
     text-align: center;
   }
-  #nav-links a:hover {
+  #loc_nav a:hover,
+  #act_nav a:hover,
+  #register a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
     font-weight: bold;
   }
-  #nav-links a:focus {
+  #loc_nav a:focus,
+  #act_nav a:focus,
+  #register a:focus {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
