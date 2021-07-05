@@ -100,14 +100,17 @@ picture:hover {
 /* ==================
         Header
    ================== */
-
+   
+.logo {
+  width: 48vw;
+  max-width: 60rem;
+}
 #nav-links {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   width: auto;
 }
-
 #nav-links a {
   text-decoration: none;
   font-weight: bold;
@@ -115,11 +118,6 @@ picture:hover {
   border-top: 3px solid #ffffff00;
   outline: none;
 }
-.logo {
-  width: 48vw;
-  max-width: 60rem;
-}
-
 #loc_nav a,
 #act_nav a,
 #register a {
@@ -130,13 +128,11 @@ picture:hover {
   text-align: center;
   height: 4rem;
 }
-
 #nav-links div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 #nav-links a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
@@ -150,11 +146,9 @@ picture:hover {
 .marqueur fa {
   color: #030303;
 }
-
 #register a {
   color: #0065fc;
 }
-
 p .fas {
   color: #0065fc;
 }
@@ -166,7 +160,6 @@ p .fas {
 .butt {
   font-family: FontAwesome, "ralewaythin", sans-serif;
 }
-
 .butt_where {
   font-family: FontAwesome, "ralewaythin", sans-serif;
   min-width: 50px;
@@ -183,7 +176,7 @@ p .fas {
   cursor: pointer;
   border-right: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
 }
 #area_bar {
   display: flex;
@@ -194,22 +187,21 @@ p .fas {
 #area_bar input[type="text"] {
   width: 15vw;
   min-width: 140px;
+  padding-left: 10px;
 }
-
 #area_bar input,
 input.button {
   height: 40px;
   color: #030303;
   text-decoration: none;
   border: none;
-  margin-left: 10px;
   font-size: medium;
   font-weight: bold;
 }
 #area_bar input[type="submit"] {
   background-color: #0065fc;
   color: white;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0px;
   cursor: pointer;
   font-size: medium;
   height: auto;
@@ -238,8 +230,8 @@ input.button {
 #area_resize input[type="text"] {
   width: 70vw;
   max-width: 400px;
+  padding-left: 10px;
 }
-
 #area_resize input[type="submit"] {
   background-color: #0065fc;
   color: white;
@@ -249,12 +241,13 @@ input.button {
   height: auto;
 }
 #area p {
-  margin: 0rem 0rem 1rem 1rem;
+  margin: 0 0 1rem 1rem;
 }
 
 /* ==================
       Filtres
    ================== */
+
 .filters {
   margin-bottom: 20px;
 }
@@ -267,11 +260,9 @@ input.button {
   font-weight: 700;
   margin: auto;
 }
-
 .filters i {
   font-size: small;
 }
-
 #eco,
 #persons,
 #mood,
@@ -290,7 +281,6 @@ input.button {
   transition: ease-in;
   outline: none;
 }
-
 #eco:hover,
 #persons:hover,
 #mood:hover,
@@ -305,7 +295,13 @@ input.button {
   transform: scale(1.1);
   transition: ease-in;
 }
-
+.filters button {
+  background: none;
+  border: 1px solid #f2f2f2;
+  padding: 0px;
+  border-radius: 20px;
+  margin: auto;
+}
 button .fas {
   display: flex;
   position: static;
@@ -317,19 +313,9 @@ button .fas {
   width: 30px;
   height: 30px;
 }
-
 button span {
   text-align: center;
 }
-
-.filters button {
-  background: none;
-  border: 1px solid #f2f2f2;
-  padding: 0px;
-  border-radius: 20px;
-  margin: auto;
-}
-
 .filters button .fas {
   color: #0065fc;
 }
@@ -346,24 +332,19 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 Article:first-child {
   width: 65%;
 }
-
 Article:nth-of-type(2) {
   width: 30%;
 }
-
 Article:last-child {
   width: auto;
 }
-
 h1 {
   margin-bottom: 16px;
   font-size: large;
 }
-
 h1 > span {
   font-size: smaller;
   font-weight: normal;
@@ -372,10 +353,6 @@ h1 > span {
 /* ==================
          Section hébergements à Marseille
    ================== */
-
-#entitle {
-  width: 100%;
-}
 
 #location {
   display: flex;
@@ -387,25 +364,15 @@ h1 > span {
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
 }
-
-#location h2 {
-  margin-left: 10px;
-}
-
-#location picture img {
-  width: 100%;
-  opacity: 1;
-  height: 70%;
-  object-fit: cover;
-  margin: auto;
-  border-radius: 5px;
-  transition: 0.3s ease-in-out;
-}
-
 #location a {
   text-decoration: none;
 }
-
+#entitle {
+  width: 100%;
+}
+#location h2 {
+  margin-left: 10px;
+}
 .card {
   border: 3px solid rgb(255, 255, 255);
   margin: 5px;
@@ -419,7 +386,6 @@ h1 > span {
   color: #030303;
   height: 225px;
 }
-
 .card .fig {
   display: flex;
   flex-direction: column;
@@ -427,32 +393,35 @@ h1 > span {
   margin-top: 5px;
   line-height: 150%;
 }
-
+#location picture img {
+  width: 100%;
+  opacity: 1;
+  height: 70%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
 .rating {
   display: inline-block;
   margin-left: 5px;
 }
-
 .checked {
   color: #0065fc;
 }
-
 .empty {
   color: #deebff;
 }
-
 .read_more {
   width: 100%;
   font-weight: bold;
-  margin: 0px 0px 10px 10px;
+  margin: 0 0 10px 10px;
   height: auto;
 }
-
 .fig {
   font-weight: bold;
   font-size: medium;
 }
-
 .fig .price {
   font-weight: normal;
 }
@@ -468,15 +437,12 @@ h1 > span {
   width: 90%;
   align-items: baseline;
 }
-
 #title_pop .fa {
   font-size: larger;
 }
-
 #title_pop h2 {
   margin-bottom: 0;
 }
-
 #popular {
   display: flex;
   border-radius: 15px;
@@ -487,7 +453,6 @@ h1 > span {
   background-color: #f2f2f2;
   padding: 10px 10px 10px;
 }
-
 .card_2 {
   display: flex;
   flex-direction: row;
@@ -500,13 +465,24 @@ h1 > span {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.048);
   background-color: white;
 }
-
 .card_2 .fig {
   display: flex;
   flex-direction: column;
   align-content: flex-end;
   line-height: 1.5rem;
   padding: 0.5rem;
+}
+#popular picture img {
+  width: 100%;
+  opacity: 1;
+  height: 15vh;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+  transition: 0.3s ease-in-out;
+}
+#popular picture {
+  width: 50%;
+  border-radius: 5%;
 }
 .card_2 .price {
   font-size: smaller;
@@ -515,20 +491,6 @@ h1 > span {
   margin-top: auto;
   font-size: small;
 }
-#popular picture img {
-  width: 100%;
-  opacity: 1;
-  height: 15vh;
-  object-fit: cover;
-  border-radius: 5px 0px 0px 5px;
-  transition: 0.3s ease-in-out;
-}
-
-#popular picture {
-  width: 50%;
-  border-radius: 5%;
-}
-
 #popular a {
   text-decoration: none;
 }
@@ -544,17 +506,14 @@ Article:last-child {
   align-items: center;
   margin-bottom: 5vh;
 }
-
 #title_act {
   width: 100%;
   margin-bottom: 20px;
   margin-top: 40px;
 }
-
 #activity a {
   text-decoration: none;
 }
-
 #activity {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -573,7 +532,6 @@ Article:last-child {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.137);
   border-radius: 5% 5% 5% 5%;
 }
-
 #activity picture img {
   width: 100%;
   height: 100%;
@@ -617,16 +575,13 @@ Article:last-child {
 .footer-list a {
   text-decoration: none;
 }
-
 ul {
   list-style-type: none;
 }
-
 li {
   margin: 10px 0;
   font-size: medium;
 }
-
 footer {
   display: flex;
   background-color: #f2f2f2;
@@ -634,11 +589,9 @@ footer {
   justify-content: space-evenly;
   width: 100%;
 }
-
 footer > div {
   width: 80%;
 }
-
 li:first-child {
   font-size: large;
   font-weight: bold;
@@ -661,7 +614,6 @@ li:last-child {
     width: 75%;
   }
 }
-
 @media screen and (min-width: 992px) {
   .card_3:nth-of-type(1) {
     flex: 1.5;
@@ -759,7 +711,6 @@ li:last-child {
     font-size: small;
   }
 }
-
 @media screen and (max-width: 768px) {
   body {
     margin: 0px;
@@ -771,7 +722,6 @@ li:last-child {
   .logo img {
     margin: auto;
   }
-
   #nav-links a {
     border-bottom: 3px solid #ffffff00;
     border-top: none;
