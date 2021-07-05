@@ -545,6 +545,7 @@ Article:last-child {
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
+  margin-right: 1rem;
   height: 15%;
   margin-bottom: 0;
 }
@@ -634,7 +635,6 @@ li:last-child {
   }
 }
 @media screen and (max-width: 1185px) {
-
   #loc_nav a,
   #act_nav a,
   #register a {
@@ -763,10 +763,15 @@ li:last-child {
   }
   h1 {
     font-size: x-large;
-    text-align: center;
+    font-weight: bolder;
+    margin-left: 1rem;
   }
   h1 span {
     font-weight: 100;
+    font-size: medium;
+  }
+  #area p {
+    margin: 0 0 2rem 2rem;
   }
   #area {
     display: flex;
@@ -838,8 +843,12 @@ li:last-child {
     margin-bottom: 15px;
     background-color: #f2f2f200;
   }
+  #popular {
+    border-radius: unset;
+  }
   .read_more {
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
     margin-left: 0;
   }
   #title_pop .fa {
@@ -847,6 +856,7 @@ li:last-child {
   }
   #title_act {
     margin-left: 10%;
+    margin-top: 0;
   }
   #activity {
     display: grid;
@@ -870,7 +880,6 @@ li:last-child {
   }
   .card_3 .fig {
     height: 20%;
-    margin-top: auto;
     font-size: medium;
     line-height: 2vh;
   }
