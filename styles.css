@@ -892,10 +892,10 @@ li:last-child {
     line-height: 2vh;
   }
   footer {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   li:first-child {
     margin-bottom: 20px;
