@@ -629,6 +629,11 @@ li:last-child {
     flex-wrap: wrap;
     width: 80%;
   }
+  .filters span{
+    font-size: small;
+    margin-left:0.3rem ;
+    margin-right: 0.3rem;
+  }
   #eco,
   #persons,
   #mood,
