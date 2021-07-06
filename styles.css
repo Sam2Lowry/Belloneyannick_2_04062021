@@ -132,16 +132,14 @@ picture:hover {
   flex-direction: row;
   align-items: center;
 }
-#loc_nav a:hover,
-#act_nav a:hover,
-#register a:hover {
+
+:is(#loc_nav, #act_nav, #register) a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
 }
-#loc_nav a:focus,
-#act_nav a:focus,
-#register a:focus {
+
+:is(#loc_nav, #act_nav, #register) a:focus {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
@@ -284,14 +282,8 @@ input.button {
   transition: ease-in;
   outline: none;
 }
-#eco:hover,
-#persons:hover,
-#mood:hover,
-#pet:hover,
-#eco:focus,
-#persons:focus,
-#mood:focus,
-#pet:focus {
+
+:is(#eco, #persons, #pet, #mood) :is(:focus, :hover) {
   opacity: 0.5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -639,9 +631,7 @@ li:last-child {
   }
 }
 @media screen and (max-width: 1185px) {
-  #loc_nav a,
-  #act_nav a,
-  #register a {
+  :is(#loc_nav, #act_nav, #register) a {
     width: 16vh;
   }
 }
@@ -727,17 +717,13 @@ li:last-child {
     width: 50vh;
     text-align: center;
   }
-  #loc_nav a:hover,
-  #act_nav a:hover,
-  #register a:hover {
+  :is(#loc_nav, #act_nav, #register) a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
     font-weight: bold;
   }
-  #loc_nav a:focus,
-  #act_nav a:focus,
-  #register a:focus {
+  :is(#loc_nav, #act_nav, #register) a:focus {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
@@ -895,7 +881,6 @@ li:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   li:first-child {
     margin-bottom: 20px;
