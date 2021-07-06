@@ -133,13 +133,17 @@ picture:hover {
   align-items: center;
 }
 
-:is(#loc_nav, #act_nav, #register) a:hover {
+#loc_nav a:hover,
+#act_nav a:hover,
+#register a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
 }
 
-:is(#loc_nav, #act_nav, #register) a:focus {
+#loc_nav a:focus,
+#act_nav a:focus,
+#register a:focus {
   border-top: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
@@ -283,7 +287,14 @@ input.button {
   outline: none;
 }
 
-:is(#eco, #persons, #pet, #mood) :is(:focus, :hover) {
+#eco:focus,
+#persons:focus,
+#pet:focus,
+#mood:focus,
+#eco:hover,
+#persons:hover,
+#pet:hover,
+#mood:hover {
   opacity: 0.5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -697,13 +708,17 @@ li:last-child {
     width: 50vh;
     text-align: center;
   }
-  :is(#loc_nav, #act_nav, #register) a:hover {
+  #loc_nav a:hover,
+  #act_nav a:hover,
+  #register a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
     font-weight: bold;
   }
-  :is(#loc_nav, #act_nav, #register) a:focus {
+  #loc_nava a:focus,
+  #act_nav a:focus,
+  #register a:focus {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
