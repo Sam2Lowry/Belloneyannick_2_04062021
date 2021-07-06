@@ -610,32 +610,7 @@ li:last-child {
     width: 75%;
   }
 }
-@media screen and (min-width: 992px) {
-  .card_3:nth-of-type(1) {
-    flex: 1.5;
-  }
-  .card_3:nth-of-type(2) {
-    flex: 1;
-  }
-  .card_3:nth-of-type(3) {
-    flex: 1;
-  }
-  .card_3:nth-of-type(4) {
-    flex: 1.51;
-  }
-  .card_3:nth-of-type(5) {
-    flex: 1;
-  }
-  .card_3:nth-of-type(6) {
-    flex: 1;
-  }
-}
-@media screen and (max-width: 1185px) {
-  :is(#loc_nav, #act_nav, #register) a {
-    width: 16vh;
-  }
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
   h1 {
     font-size: Large;
   }
@@ -651,40 +626,45 @@ li:last-child {
   }
   section {
     flex-direction: column;
+    align-items: center;
   }
   Article:first-child {
     display: flex;
-    width: auto;
+    width: 90%;
     order: 2;
-    max-width: 90vw;
   }
   Article:nth-of-type(2) {
-    width: auto;
+    width: 90%;
     order: 1;
-    max-width: 90vw;
-    margin-bottom: 1rem;
   }
   Article:last-child {
-    width: auto;
+    width: 90%;
     order: 3;
-    max-width: 90vw;
   }
   .card {
-    width: 30vh;
-    justify-content: center;
+    width: 90%;
+  }
+  .card_2 {
+    width: 90%;
   }
   #location {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin: auto;
     margin-bottom: 15px;
+    background-color: #f2f2f200;
   }
-  #title_pop {
-    justify-content: space-between;
+  #popular {
+    border-radius: unset;
+  }
+  .read_more {
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+    margin-left: 0;
   }
   #title_pop .fa {
-    margin-right: 110px;
+    margin-right: 0%;
   }
   li:first-child {
     font-size: small;
@@ -693,7 +673,7 @@ li:last-child {
     font-size: small;
   }
   .card_2 {
-    width: 70%;
+    width: 90%;
     justify-content: space-between;
   }
   .card_3 .fig {
@@ -808,45 +788,6 @@ li:last-child {
   }
   .filters form {
     width: 100%;
-  }
-  section {
-    flex-direction: column;
-    align-items: center;
-  }
-  Article:first-child {
-    display: flex;
-    width: 90%;
-  }
-  Article:nth-of-type(2) {
-    width: 90%;
-  }
-  Article:last-child {
-    width: 90%;
-  }
-  .card {
-    width: 90%;
-  }
-  .card_2 {
-    width: 90%;
-  }
-  #location {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 15px;
-    background-color: #f2f2f200;
-  }
-  #popular {
-    border-radius: unset;
-  }
-  .read_more {
-    margin-bottom: 0.3rem;
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-  #title_pop .fa {
-    margin-right: 0%;
   }
   #title_act {
     margin-left: 10%;
